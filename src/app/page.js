@@ -47,6 +47,7 @@ export default function Home() {
         </div>
       </main>
       <footer className={styles.footer}>
+        FOOTER
         <a
           href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
           target="_blank"

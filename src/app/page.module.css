@@ -38,7 +38,7 @@
   font-family: var(--font-geist-mono);
   padding-left: 0;
   margin: 0;
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 24px;
   letter-spacing: -0.01em;
   list-style-position: inside;
@@ -68,22 +68,19 @@
   padding: 0 20px;
   border: none;
   border: 1px solid transparent;
-  transition:
-    background 0.2s,
-    color 0.2s,
-    border-color 0.2s;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 20px;
   font-weight: 500;
 }
 
 a.primary {
-  background: var(--foreground);
-  color: var(--background);
+  background: var(--color-white);
+  color: var(--color-black);
   gap: 8px;
 }
 
@@ -145,7 +142,7 @@ a.secondary {
   }
 
   .ctas a {
-    font-size: 14px;
+    font-size: 1.4rem;
     height: 40px;
     padding: 0 16px;
   }
