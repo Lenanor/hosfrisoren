@@ -1,0 +1,19 @@
+.bg-1 {
+  background-color: var(--bg-1);
+}
+
+.bg-2 {
+  background-color: var(--bg-2);
+}
+
+.bg-3 {
+  background-color: var(--bg-3);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(24, minmax(0, 1fr));
+  gap: 1rem;
+  padding-top: var(--section-vertical-padding);
+  padding-bottom: var(--section-vertical-padding);
+}

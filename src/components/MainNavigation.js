@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { useEffect, useState, useRef } from "react";
 
-import HamburgerButton from "./hamburger-button";
-import "./navigation.css";
+import HamburgerButton from "./HamburgerButton";
+import styles from "./MainNavigation.module.css";
 
 const pages = [
   {
@@ -23,11 +23,11 @@ const pages = [
   },
 ];
 
-function Navigation({ path }) {
+function MainNavigation({ path }) {
   const modalRef = useRef(null);
   const [isExpanded, setIsExpanded] = useState(false);
 
-  const expandedClass = isExpanded ? "main-navigation__nav-list--expanded" : "";
+  const expandedClass = isExpanded ? styles.expanded : "";
 
   useEffect(() => {
     // trap focus to navigation modal when menu is expanded by hamburger button.
@@ -77,14 +77,14 @@ function Navigation({ path }) {
   }
 
   return (
-    <nav className="main-navigation" ref={modalRef}>
+    <nav className={`${styles.navigation}`} ref={modalRef}>
       <HamburgerButton isExpanded={isExpanded} toggleMenu={toggleMenu} />
-      <ul className="main-navigation__nav-list">
+      <ul className={`${styles.list} ${expandedClass}`}>
         {isExpanded && (
-          <li className="main-navigation__list-item-home">
+          <li className={styles.homeItem}>
             <Link
               href="/"
-              onClick={isExpanded ? toggleMenu : undefined}
+              onClick={toggleMenu}
               aria-current={"/" === path ? "page" : undefined}
             >
               Startsida
@@ -92,7 +92,10 @@ function Navigation({ path }) {
           </li>
         )}
         {pages.map((page, index) => (
-          <li key={page.name} className={`main-navigation__list-item-${index}`}>
+          <li
+            key={page.name}
+            className={`${styles.listItem} ${styles[`listItem-${index}`]}`}
+          >
             <Link
               href={page.href}
               onClick={isExpanded ? toggleMenu : undefined}
@@ -107,4 +110,4 @@ function Navigation({ path }) {
   );
 }
 
-export default Navigation;
+export default MainNavigation;

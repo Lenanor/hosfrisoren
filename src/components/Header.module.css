@@ -1,0 +1,39 @@
+.header {
+  padding-top: var(--document-gutter-s);
+  padding-bottom: 0;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+  padding-top: 1.18rem;
+  width: 108px;
+  height: auto;
+}
+
+.link .logo {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 769px) {
+  .header {
+    color: var(--color-black);
+    background-color: var(--color-white);
+    padding-top: var(--document-gutter-m);
+    padding-bottom: 0;
+  }
+
+  .link {
+    padding-top: 0.3rem;
+    width: 146px;
+  }
+
+  .logo {
+    padding-top: 0;
+  }
+}

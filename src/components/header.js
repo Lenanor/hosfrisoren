@@ -4,35 +4,35 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 
-import Navigation from "./navigation";
+import MainNavigation from "./MainNavigation";
 
-import "./header.css";
+import styles from "./Header.module.css";
 
 function Header() {
   const path = usePathname();
 
   return (
-    <header className="header">
-      <div className="header__flex-wrapper">
+    <header className={`${styles.header} container-gutter`}>
+      <div className={styles.wrapper}>
         <a href="#main-content" className="sr-only">
-          Skip to main content
+          Hoppa till huvudinnehållet
         </a>
         <Link
           href="/"
-          className="header__logo-link"
+          className={styles.link}
           aria-current={"/" === path ? "page" : undefined}
+          aria-label="Till startsidan"
         >
           <Image
-            className="header__logo"
+            className={styles.logo}
             src="/logo_gray.svg"
-            alt="Hos Frisören logomark"
+            alt=""
             width={220}
             height={73}
             priority
           />
-          <span className="sr-only">To start page</span>
         </Link>
-        <Navigation path={path} />
+        <MainNavigation path={path} />
       </div>
     </header>
   );

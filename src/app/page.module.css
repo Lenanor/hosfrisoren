@@ -1,41 +1,28 @@
 .page {
-  --gray-rgb: 0, 0, 0;
-  --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
-  --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
-
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
-
-  display: grid;
-  grid-template-rows: 20px 1fr 20px;
-  align-items: center;
-  justify-items: center;
   min-height: 100svh;
-  padding: 80px;
-  gap: 64px;
-  font-family: var(--font-geist-sans);
 }
 
-@media (prefers-color-scheme: dark) {
-  .page {
-    --gray-rgb: 255, 255, 255;
-    --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
-    --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
+/* .mainHeading span {
+  font-family: "Lora", Georgia, "Times New Roman", serif;
+  font-size: var(--heading-1);
+  display: block;
+} */
 
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-  }
+.cardList {
+  grid-column: 1/-1;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(24rem, 100%), 1fr));
 }
 
-.main {
+/* .main {
   display: flex;
   flex-direction: column;
   gap: 32px;
   grid-row-start: 2;
-}
+} */
 
-.main ol {
-  font-family: var(--font-geist-mono);
+/* .main ol {
   padding-left: 0;
   margin: 0;
   font-size: 1.4rem;
@@ -103,10 +90,10 @@ a.secondary {
 
 .footer img {
   flex-shrink: 0;
-}
+} */
 
 /* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
+/* @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
     background: var(--button-primary-hover);
     border-color: transparent;
@@ -162,4 +149,4 @@ a.secondary {
   .logo {
     filter: invert();
   }
-}
+} */

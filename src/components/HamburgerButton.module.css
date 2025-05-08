@@ -1,0 +1,56 @@
+.button {
+  background-color: transparent;
+  border-color: transparent;
+  align-self: flex-end;
+}
+
+.button[aria-expanded="true"] {
+  z-index: 1;
+  position: relative;
+}
+
+@media screen and (min-width: 769px) {
+  .button {
+    display: none;
+  }
+}
+
+.symbol {
+  width: 3rem;
+  height: 3rem;
+  position: relative;
+}
+
+.symbol:before,
+.symbol:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 3rem;
+  border-radius: 1rem;
+  left: 0;
+  top: 1rem;
+  background: var(--color-white);
+  transform-origin: center center;
+  transition: transform 200ms ease-out;
+}
+
+.button[aria-expanded="false"] .symbol:before,
+.button[aria-expanded="false"] .symbol:after {
+  background: var(--color-black);
+}
+
+.symbol:after {
+  top: auto;
+  bottom: 1rem;
+}
+
+.button[aria-expanded="true"] .symbol:before {
+  transform: rotate(45deg);
+  top: 1.4rem;
+}
+
+.button[aria-expanded="true"] .symbol:after {
+  transform: rotate(-45deg);
+  bottom: 1.4rem;
+}

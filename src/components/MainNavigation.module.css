@@ -1,16 +1,16 @@
-.main-navigation {
+.navigation {
   display: flex;
   flex-direction: column;
   gap: 8rem;
 }
 
-@media screen and (min-width: 721px) {
-  .main-navigation {
+@media screen and (min-width: 769px) {
+  .navigation {
     display: block;
   }
 }
 
-.main-navigation__nav-list a {
+.list a {
   font-size: 4rem;
   color: var(--color-white);
   white-space: nowrap;
@@ -27,8 +27,19 @@
   }
 }
 
-@media screen and (max-width: 720px) {
-  .main-navigation__nav-list li {
+@media screen and (max-width: 768px) {
+  .list:not(.expanded) {
+    display: none;
+  }
+
+  .expanded {
+    position: fixed;
+    inset: 0;
+    background-color: rgb(4, 61, 66);
+    padding: var(--document-gutter-s) var(--document-gutter-s);
+  }
+
+  .expanded li {
     transform: translateX(100%);
     opacity: 0;
     animation-name: slide-in;
@@ -38,34 +49,39 @@
     padding: 3px 0;
   }
 
-  .main-navigation__list-item-home {
+  .homeItem {
     animation-delay: 0.1s;
+    margin-top: 3rem;
   }
-  .main-navigation__list-item-0 {
+  .listItem-0 {
     animation-delay: 0.2s;
   }
-  .main-navigation__list-item-1 {
+  .listItem-1 {
     animation-delay: 0.3s;
   }
-  .main-navigation__list-item-2 {
+  .listItem-2 {
     animation-delay: 0.4s;
   }
-  .main-navigation__list-item-3 {
+  .listItem-3 {
     animation-delay: 0.5s;
   }
-  .main-navigation__list-item-4 {
+  .listItem-4 {
     animation-delay: 0.6s;
   }
 }
 
-@media screen and (min-width: 721px) {
-  .main-navigation__nav-list {
+@media screen and (min-width: 769px) {
+  .homeItem {
+    display: none;
+  }
+
+  .list {
     display: flex;
     gap: 1rem;
     justify-content: flex-end;
   }
 
-  .main-navigation__nav-list a {
+  .list a {
     text-transform: uppercase;
     text-align: center;
     font-size: 1.4rem;

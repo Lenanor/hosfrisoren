@@ -1,0 +1,32 @@
+.imgParent {
+  position: relative;
+  width: 100%;
+  grid-column: 1/-1;
+  aspect-ratio: 320/427;
+}
+
+@media screen and (min-width: 481px) {
+  .imgParent {
+    grid-column: 1/14;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .imgParent.left {
+    grid-column: 1/12;
+  }
+
+  .imgParent.right {
+    grid-column: 14/25;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .imgParent.left {
+    grid-column: 3/12;
+  }
+
+  .imgParent.right {
+    grid-column: 14/23;
+  }
+}
