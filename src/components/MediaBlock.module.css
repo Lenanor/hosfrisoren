@@ -1,0 +1,71 @@
+.section {
+  display: flex;
+  column-gap: 1rem;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  padding: 0 1rem 2rem 1rem;
+  position: relative;
+}
+
+.snapsInline {
+  scroll-snap-type: inline mandatory;
+}
+
+.snapsInline > * {
+  scroll-snap-align: start;
+}
+
+@media screen and (min-width: 769px) {
+  .section {
+    width: 100%;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 0;
+    padding: 0;
+  }
+}
+
+.wrapper {
+  position: relative;
+  aspect-ratio: 3/4;
+  max-width: 256px;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+@media screen and (min-width: 769px) {
+  .wrapper {
+    max-width: 360px;
+    width: 100%;
+  }
+}
+
+/* Arrows for scrollable container */
+/* .scrollArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.scrollArrow.left {
+  left: 0.5rem;
+}
+
+.scrollArrow.right {
+  right: 0.5rem;
+}
+
+.scrollArrow:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+} */

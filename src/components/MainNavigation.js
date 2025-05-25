@@ -1,112 +1,86 @@
-import Link from "next/link";
-import { useEffect, useState, useRef } from "react";
+"use client";
+
+import { useEffect, useRef, useState } from "react";
 
 import HamburgerButton from "./HamburgerButton";
-import styles from "./MainNavigation.module.css";
+import SmartLink from "./ui/SmartLink";
 
-const pages = [
-  {
-    name: "Om oss",
-    href: "/about",
-  },
-  {
-    name: "Produkter",
-    href: "/products",
-  },
-  {
-    name: "Vanliga frågor",
-    href: "/faq",
-  },
-  {
-    name: "Boka",
-    href: "/co",
-  },
-];
+import styles from "./MainNavigation.module.css";
+import { mainNavContent, mobileNavContent } from "@/content/main-navigation";
 
 function MainNavigation({ path }) {
-  const modalRef = useRef(null);
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef(null);
 
-  const expandedClass = isExpanded ? styles.expanded : "";
-
+  // Close on ESC key
   useEffect(() => {
-    // trap focus to navigation modal when menu is expanded by hamburger button.
-    // close modal with esc.
-    if (isExpanded && modalRef.current) {
-      const modalElement = modalRef.current;
-      //add any focusable HTML element you want to include to this string
-      const focusableElements = modalElement.querySelectorAll(
-        'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
-      );
-      const firstElement = focusableElements[0];
-      const lastElement = focusableElements[focusableElements.length - 1];
-
-      const handleTabKeyPress = (event) => {
-        if (event.key === "Tab") {
-          if (event.shiftKey && document.activeElement === firstElement) {
-            event.preventDefault();
-            lastElement.focus();
-          } else if (
-            !event.shiftKey &&
-            document.activeElement === lastElement
-          ) {
-            event.preventDefault();
-            firstElement.focus();
-          }
-        }
-      };
-
-      const handleEscapeKeyPress = (event) => {
-        if (event.key === "Escape") {
-          toggleMenu();
-        }
-      };
-
-      modalElement.addEventListener("keydown", handleTabKeyPress);
-      modalElement.addEventListener("keydown", handleEscapeKeyPress);
-
-      return () => {
-        modalElement.removeEventListener("keydown", handleTabKeyPress);
-        modalElement.removeEventListener("keydown", handleEscapeKeyPress);
-      };
+    function handleKeyDown(e) {
+      if (e.key === "Escape") {
+        setIsOpen(false);
+      }
     }
-  }, [isExpanded]);
 
-  function toggleMenu() {
-    setIsExpanded((prev) => !prev);
-  }
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, []);
+
+  // Trap focus inside the menu
+  // Trap focus inside menu
+  useEffect(() => {
+    if (!isOpen) return;
+    const focusable = menuRef.current?.querySelectorAll(
+      "a, button, input, textarea, select, [tabindex]:not([tabindex='-1'])"
+    );
+    if (!focusable?.length) return;
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+
+    function trap(e) {
+      if (e.key !== "Tab") return;
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    }
+    document.addEventListener("keydown", trap);
+    return () => document.removeEventListener("keydown", trap);
+  }, [isOpen]);
+
+  const linkContent = isOpen ? mobileNavContent : mainNavContent;
 
   return (
-    <nav className={`${styles.navigation}`} ref={modalRef}>
-      <HamburgerButton isExpanded={isExpanded} toggleMenu={toggleMenu} />
-      <ul className={`${styles.list} ${expandedClass}`}>
-        {isExpanded && (
-          <li className={styles.homeItem}>
-            <Link
-              href="/"
-              onClick={toggleMenu}
-              aria-current={"/" === path ? "page" : undefined}
+    <div className={styles.wrapper}>
+      <nav
+        className={`${styles.nav} ${isOpen ? styles.expanded : ""}`}
+        aria-label="Huvudmeny"
+        ref={menuRef}
+      >
+        <HamburgerButton
+          isExpanded={isOpen}
+          toggleMenu={() => setIsOpen((prev) => !prev)}
+          aria-expanded={isOpen}
+        />
+        <ul className={`${styles.list}`}>
+          {linkContent.map((item, index) => (
+            <li
+              key={item.name}
+              className={`${styles.listItem} ${styles[`listItem-${index}`]}`}
             >
-              Startsida
-            </Link>
-          </li>
-        )}
-        {pages.map((page, index) => (
-          <li
-            key={page.name}
-            className={`${styles.listItem} ${styles[`listItem-${index}`]}`}
-          >
-            <Link
-              href={page.href}
-              onClick={isExpanded ? toggleMenu : undefined}
-              aria-current={page.href === path ? "page" : undefined}
-            >
-              {page.name}
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </nav>
+              <SmartLink
+                href={item.href}
+                onClick={isOpen ? () => setIsOpen((prev) => !prev) : undefined}
+                aria-current={item.href === path ? "page" : undefined}
+              >
+                {item.name}
+              </SmartLink>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </div>
   );
 }
 

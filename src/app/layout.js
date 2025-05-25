@@ -1,7 +1,10 @@
+import Link from "next/link";
+
 import { nunito, lora } from "../fonts/fonts";
 import "./globals.css";
 
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Create Next App",
@@ -26,19 +29,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="sv" className={`${lora.variable} ${nunito.variable}`}>
-      <head>
-        {/* Preload LCP font */}
-        <link
-          rel="preload"
-          href="/fonts/Lora-SemiBold.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-      </head>
+      <head></head>
       <body>
+        <Link href="#main-content" id="skip-link">
+          Till huvudinnehållet
+        </Link>
         <Header />
         <main id="main-content">{children}</main>
+        <Footer />
       </body>
     </html>
   );

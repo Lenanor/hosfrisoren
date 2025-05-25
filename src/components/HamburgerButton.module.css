@@ -1,12 +1,13 @@
 .button {
   background-color: transparent;
   border-color: transparent;
-  align-self: flex-end;
+  margin-left: 0;
+  margin-bottom: 0;
 }
 
 .button[aria-expanded="true"] {
-  z-index: 1;
-  position: relative;
+  margin-left: auto;
+  display: block;
 }
 
 @media screen and (min-width: 769px) {
@@ -30,14 +31,9 @@
   border-radius: 1rem;
   left: 0;
   top: 1rem;
-  background: var(--color-white);
-  transform-origin: center center;
-  transition: transform 200ms ease-out;
-}
-
-.button[aria-expanded="false"] .symbol:before,
-.button[aria-expanded="false"] .symbol:after {
   background: var(--color-black);
+  transform-origin: center center;
+  transition: transform 0.13s linear;
 }
 
 .symbol:after {
@@ -48,9 +44,11 @@
 .button[aria-expanded="true"] .symbol:before {
   transform: rotate(45deg);
   top: 1.4rem;
+  background: var(--color-white);
 }
 
 .button[aria-expanded="true"] .symbol:after {
   transform: rotate(-45deg);
   bottom: 1.4rem;
+  background: var(--color-white);
 }

@@ -1,57 +1,61 @@
-.navigation {
-  display: flex;
-  flex-direction: column;
-  gap: 8rem;
-}
-
-@media screen and (min-width: 769px) {
-  .navigation {
-    display: block;
-  }
-}
-
 .list a {
   font-size: 4rem;
   color: var(--color-white);
   white-space: nowrap;
 }
 
-@keyframes slide-in {
-  from {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
 @media screen and (max-width: 768px) {
-  .list:not(.expanded) {
-    display: none;
-  }
-
-  .expanded {
+  .nav.expanded {
     position: fixed;
     inset: 0;
     background-color: rgb(4, 61, 66);
-    padding: var(--document-gutter-s) var(--document-gutter-s);
+    z-index: 1;
+    padding: var(--header-padding-top) var(--document-gutter);
   }
 
-  .expanded li {
-    transform: translateX(100%);
+  .nav .list {
+    display: none;
+  }
+
+  .nav.expanded .list {
+    display: block;
+  }
+
+  .nav.expanded .list li:first-child {
+    margin-top: 6rem;
+  }
+
+  .nav.expanded .listItem {
+    transform: translateX(150%);
     opacity: 0;
     animation-name: slide-in;
-    animation-duration: 500ms;
+    animation-duration: 300ms;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
     padding: 3px 0;
   }
 
+  @keyframes slide-in {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .nav.expanded .listItem {
+      animation: none !important;
+      opacity: 1 !important;
+      transform: translateX(0) !important;
+    }
+  }
+
   .homeItem {
     animation-delay: 0.1s;
-    margin-top: 3rem;
   }
   .listItem-0 {
     animation-delay: 0.2s;

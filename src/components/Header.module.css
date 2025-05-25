@@ -1,5 +1,5 @@
 .header {
-  padding-top: var(--document-gutter-s);
+  padding-top: var(--header-padding-top);
   padding-bottom: 0;
 }
 
@@ -24,8 +24,6 @@
   .header {
     color: var(--color-black);
     background-color: var(--color-white);
-    padding-top: var(--document-gutter-m);
-    padding-bottom: 0;
   }
 
   .link {

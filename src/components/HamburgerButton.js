@@ -1,17 +1,14 @@
 import styles from "./HamburgerButton.module.css";
 
-function HamburgerButton({ isExpanded, toggleMenu }) {
-  const menuText = isExpanded ? "Close menu" : "Open menu";
+function HamburgerButton({ isExpanded, toggleMenu, modal = false, ...props }) {
+  const modalVariant = modal
+    ? `${styles.button} ${styles.modal}`
+    : styles.button;
 
   return (
-    <button
-      className={styles.button}
-      onClick={toggleMenu}
-      aria-expanded={isExpanded}
-      aria-controls="primary-navigation"
-    >
+    <button className={modalVariant} onClick={toggleMenu} {...props}>
       <div className={styles.symbol} aria-hidden="true"></div>
-      <span className="sr-only">{menuText}</span>
+      <span className="sr-only">Meny</span>
     </button>
   );
 }

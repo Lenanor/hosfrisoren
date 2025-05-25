@@ -10,10 +10,28 @@
   background-color: var(--bg-3);
 }
 
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(24, minmax(0, 1fr));
-  gap: 1rem;
-  padding-top: var(--section-vertical-padding);
-  padding-bottom: var(--section-vertical-padding);
+.bg-black {
+  background-color: var(--color-black);
 }
+
+.transparent {
+  background-color: transparent;
+}
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .container {
+    position: relative;
+    top: 300px;
+    opacity: 0.5;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: entry -400px;
+  }
+
+  @keyframes fade-in {
+    to {
+      opacity: 1;
+      top: 0;
+    }
+  }
+} */

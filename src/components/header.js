@@ -12,21 +12,18 @@ function Header() {
   const path = usePathname();
 
   return (
-    <header className={`${styles.header} container-gutter`}>
+    <header className={`${styles.header} container-padding`}>
       <div className={styles.wrapper}>
-        <a href="#main-content" className="sr-only">
-          Hoppa till huvudinnehållet
-        </a>
         <Link
           href="/"
           className={styles.link}
           aria-current={"/" === path ? "page" : undefined}
-          aria-label="Till startsidan"
         >
           <Image
             className={styles.logo}
             src="/logo_gray.svg"
-            alt=""
+            alt="Hos Frisören logotyp"
+            aria-label="Till startsidan"
             width={220}
             height={73}
             priority
