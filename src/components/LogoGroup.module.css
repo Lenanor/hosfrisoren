@@ -1,0 +1,63 @@
+.image {
+  margin: 0 20px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+@media screen and (min-width: 481px) {
+  .image {
+    margin: 0 35px;
+  }
+}
+
+.kevin {
+  width: 120px;
+  height: auto;
+}
+
+.eleven {
+  width: 85px;
+  height: auto;
+}
+
+.lp {
+  width: 125px;
+  height: auto;
+}
+
+.k18 {
+  width: 45px;
+  height: auto;
+}
+
+.epres {
+  width: 60px;
+  height: auto;
+}
+
+@media screen and (min-width: 481px) {
+  .kevin {
+    width: 150px;
+    height: auto;
+  }
+
+  .eleven {
+    width: 100px;
+    height: auto;
+  }
+
+  .lp {
+    width: 160px;
+    height: auto;
+  }
+
+  .k18 {
+    width: 60px;
+    height: auto;
+  }
+
+  .epres {
+    width: 80px;
+    height: auto;
+  }
+}

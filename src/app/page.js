@@ -4,6 +4,7 @@ import TwoColImage from "@/components/ui/TwoColImage";
 import TwoColText from "@/components/ui/TwoColText";
 import Card from "@/components/ui/Card";
 import MediaBlock from "@/components/MediaBlock";
+import LogoCarousel from "@/components/LogoCarousel";
 
 import { ArrowRightIcon } from "@/assets/Icons";
 
@@ -38,7 +39,7 @@ export default function Home() {
 
       {/* CARD LIST */}
       <ColorBlock withGrid={false}>
-        <h2>{cardsData.heading}</h2>
+        {cardsData?.heading && <h2>{cardsData.heading}</h2>}
         <ul className={styles.cardList}>
           {cardsData.cards.map((card, i) => (
             <Card
@@ -59,6 +60,8 @@ export default function Home() {
         <TwoColImage id={blockContentTwo.id} mediaDirection="right" />
         <TwoColText mediaDirection="right">{blockContentTwo.body}</TwoColText>
       </ColorBlock>
+
+      <LogoCarousel />
 
       <ColorBlock bg="bg-3">
         <TwoColImage id={blockContentThree.id} />

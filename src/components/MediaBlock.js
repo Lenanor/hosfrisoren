@@ -7,10 +7,6 @@ const images = [
   { id: 2, src: "/sonja.webp" },
   { id: 3, src: "/sonja.webp" },
   { id: 4, src: "/sonja.webp" },
-  { id: 5, src: "/sonja.webp" },
-  { id: 6, src: "/sonja.webp" },
-  { id: 7, src: "/sonja.webp" },
-  { id: 8, src: "/sonja.webp" },
 ];
 
 function MediaBlock() {

@@ -52,6 +52,9 @@ function HeroStart() {
             RING
           </a>
         </div>
+        <div>
+          <a href="tel:+4624710038">0247–100 38</a>
+        </div>
       </ColorBlock>
       <div
         style={{ height: "40vh", width: "100vw", backgroundColor: "beige" }}

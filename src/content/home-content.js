@@ -10,7 +10,7 @@ export const mainHeading =
 // -----------------------------
 
 export const blockContentOne = {
-  id: "sonja",
+  id: "product_section",
   body: (
     <>
       <h2>Hur vill du ha ditt hår?</h2>
@@ -19,8 +19,9 @@ export const blockContentOne = {
         hårförlängning eller en permanent? Det fixar vi.
       </p>
       <p>
-        Våra duktiga frisörer står redo att ta hand om ditt hår. Boka tid via
-        vår online-bokning (läs mer här) eller ring oss på
+        Våra duktiga frisörer står redo att ta hand om ditt hår. Slå dig ner,
+        koppla av, drick en kaffe så sköter vi resten. Boka tid via vår
+        online-bokning (läs mer här) eller ring oss på
         <a href="tel:+4624710038"> 0247-100 38</a>.
       </p>
     </>
@@ -28,33 +29,33 @@ export const blockContentOne = {
 };
 
 export const blockContentTwo = {
-  id: "sonja",
+  id: "product_section",
   body: (
     <>
-      <h2>Produkter</h2>
+      <h2>Produkter och prismatchning</h2>
       <p>
-        Hos Frisören säljer bara hårprodukter som vi själva vill använda. De har
-        hög kvalité och de flesta är veganska, fria från sulfater, gluten,
+        Hos Frisören säljer bara hårprodukter av hög kvalitet som vi själva vill
+        använda. Så gott som alla är veganska, fria från sulfater, gluten,
         parabener och har förpackningar av återvunnen plast. Fråga oss gärna om
         rådgivning, vi kan våra produkter och guidar dig gärna om vad som passar
-        ditt hår.
+        dig och din typ av hår.
       </p>
       <p>
         <strong>
-          OBS! Om du hittar någon av våra hårprodukter billigare online så
-          prismatchar vi det lägre priset.
+          OBS! Vi prismatchar våra hårprodukter. Hittar du någon av dem
+          billigare på webben så matchar vi det lägre priset.
         </strong>
       </p>
       <p>
-        Stort tack till dig som handlar lokalt, du hjälper till att hålla ortens
-        företag levande!
+        Vi vill passa på att tacka till dig som handlar lokalt, du hjälper till
+        att hålla Leksands företag levande! 🖤
       </p>
     </>
   ),
 };
 
 export const blockContentThree = {
-  id: "sonja",
+  id: "pryl_section",
   body: (
     <>
       <h2>Surprise!</h2>
@@ -82,7 +83,7 @@ export const blockContentThree = {
 //   Homepage: Cards
 // -----------------------------
 export const cardsData = {
-  heading: "Så här jobbar vi",
+  heading: "",
   cards: [
     {
       icon: "scissors",

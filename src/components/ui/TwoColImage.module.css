@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   grid-column: 1/-1;
-  aspect-ratio: 320/427;
+  aspect-ratio: 948/1304;
 }
 
 @media screen and (min-width: 481px) {
