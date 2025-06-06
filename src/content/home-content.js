@@ -2,8 +2,13 @@
 //   Homepage: Hero / h1
 // -----------------------------
 
-export const mainHeading =
-  "Välkommen till Hos Frisören, en liten salong med stort hjärta på Torget mitt i Leksand";
+export const mainHeading = (
+  <>
+    <span>Hårhantverk & kreativitet</span>
+    <span>Välkommen till</span>
+    <span>Hos&nbsp;Frisören</span>
+  </>
+);
 
 // -----------------------------
 //   Homepage: ColorBlocks
@@ -13,7 +18,7 @@ export const blockContentOne = {
   id: "product_section",
   body: (
     <>
-      <h2>Hur vill du ha ditt hår?</h2>
+      <h2>Hur vill du ha ditt&nbsp;hår?</h2>
       <p>
         Klippning, toppning, färg eller slingor? Vill du göra en uppsättning,
         hårförlängning eller en permanent? Det fixar vi.

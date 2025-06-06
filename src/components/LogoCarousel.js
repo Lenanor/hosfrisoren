@@ -11,6 +11,9 @@ function LogoCarousel() {
       <div className={styles.logosSlide}>
         <LogoGroup />
       </div>
+      <div className={styles.logosSlide}>
+        <LogoGroup />
+      </div>
     </section>
   );
 }

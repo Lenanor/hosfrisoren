@@ -3,10 +3,13 @@ import Image from "next/image";
 import styles from "./MediaBlock.module.css";
 
 const images = [
-  { id: 1, src: "/sonja.webp" },
-  { id: 2, src: "/sonja.webp" },
-  { id: 3, src: "/sonja.webp" },
-  { id: 4, src: "/sonja.webp" },
+  { id: "media1", src: "/images/media_1.jpg" },
+  { id: "media4", src: "/images/media_4.jpg" },
+  { id: "media6", src: "/images/media_6.jpg" },
+  { id: "media7", src: "/images/media_7.jpg" },
+  { id: "media5", src: "/images/media_5.jpg" },
+  { id: "media3", src: "/images/media_3.jpg" },
+  { id: "media2", src: "/images/media_2.jpg" },
 ];
 
 function MediaBlock() {
@@ -22,9 +25,8 @@ function MediaBlock() {
             src={image.src}
             alt=""
             fill
-            // placeholder="blur"
             style={{ objectFit: "cover" }}
-            sizes="(min-width: 1440px) 360px, (min-width: 769px) calc(100vw/4), (max-width: 768px) 256px"
+            sizes="(min-width: 1440px) 288px, (min-width: 769px) calc((100vw/5) - 6 * 8px), 280px"
           />
         </div>
       ))}

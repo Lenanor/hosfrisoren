@@ -5,6 +5,7 @@ import TwoColText from "@/components/ui/TwoColText";
 import Card from "@/components/ui/Card";
 import MediaBlock from "@/components/MediaBlock";
 import LogoCarousel from "@/components/LogoCarousel";
+import FadeInOnScroll from "@/components/ui/FadeInOnScroll";
 
 import { ArrowRightIcon } from "@/assets/Icons";
 
@@ -22,28 +23,32 @@ export default function Home() {
   return (
     <>
       <HeroStart />
+      <FadeInOnScroll>
+        <ColorBlock bg="bg-1">
+          <TwoColImage id={blockContentOne.id} />
+          <TwoColText>
+            {blockContentOne.body}
+            <SmartLink
+              href="https://bokning.voady.se/hosfrisoren/hosfrisoren/"
+              className="button inverted"
+            >
+              Till onlinebokningen
+              <ArrowRightIcon className="icon" aria-hidden="true" />
+            </SmartLink>
+          </TwoColText>
+        </ColorBlock>
+      </FadeInOnScroll>
 
-      <ColorBlock bg="bg-1">
-        <TwoColImage id={blockContentOne.id} />
-        <TwoColText>
-          {blockContentOne.body}
-          <SmartLink
-            href="https://bokning.voady.se/hosfrisoren/hosfrisoren/"
-            className="button inverted"
-          >
-            Till onlinebokningen
-            <ArrowRightIcon className="icon" aria-hidden="true" />
-          </SmartLink>
-        </TwoColText>
-      </ColorBlock>
+      {/* GALLERY */}
+      <MediaBlock />
 
       {/* CARD LIST */}
       <ColorBlock withGrid={false}>
         {cardsData?.heading && <h2>{cardsData.heading}</h2>}
         <ul className={styles.cardList}>
-          {cardsData.cards.map((card, i) => (
+          {cardsData.cards.map((card) => (
             <Card
-              key={i}
+              key={card.title}
               icon={card.icon}
               title={card.title}
               body={card.body}
@@ -52,9 +57,6 @@ export default function Home() {
           ))}
         </ul>
       </ColorBlock>
-
-      {/* GALLERY */}
-      <MediaBlock />
 
       <ColorBlock bg="bg-2">
         <TwoColImage id={blockContentTwo.id} mediaDirection="right" />

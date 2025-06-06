@@ -2,14 +2,48 @@
   background: var(--color-black);
 }
 
+.footer a,
+.footer p {
+  font-size: 1.4rem;
+}
+
+.footer h2 {
+  font-size: 2.2rem;
+}
+
+.linkList a,
+.address a {
+  padding: 0.5rem 0;
+  display: block;
+}
+
+.address {
+  font-style: normal;
+}
+
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(31rem, 100%), 1fr));
-  gap: 2rem;
   color: var(--color-white);
 }
 
-.linkList a {
-  padding: 0.5rem 0;
-  display: inline-block;
+.grid div + div {
+  margin-top: 4rem;
+}
+
+@media screen and (min-width: 461px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+
+  .grid div + div {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
 }

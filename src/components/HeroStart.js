@@ -1,6 +1,9 @@
+import Link from "next/link";
+
 import ColorBlock from "./ui/ColorBlock";
 import SmartLink from "./ui/SmartLink";
-import { FacebookIcon, InstagramIcon, ArrowRightIcon } from "@/assets/Icons";
+import SoMeGroup from "./ui/SoMeGroup";
+import { ArrowRightIcon } from "@/assets/Icons";
 
 import { mainHeading } from "@/content/home-content";
 
@@ -9,32 +12,15 @@ import styles from "./HeroStart.module.css";
 function HeroStart() {
   return (
     <>
-      <ColorBlock withGutter={true} withGrid={true} bg="transparent">
+      <ColorBlock
+        className={styles.colorBlock}
+        withGutter={true}
+        withGrid={true}
+        bg="transparent"
+      >
         <h1 className={styles.mainHeading}>{mainHeading}</h1>
-        <div className={styles.soMe}>
-          <a
-            href="https://www.facebook.com/HosFrisoren"
-            className={styles.icon}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FacebookIcon aria-hidden={true} />
-            <span className="sr-only">
-              Länk till Hos Frisörens Facebook-sida. Öppnas i nytt fönster.
-            </span>
-          </a>
-          <a
-            href="https://www.instagram.com/hosfrisoren/"
-            className={styles.icon}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <InstagramIcon aria-hidden={true} />
-            <span className="sr-only">
-              Länk till Hos Frisörens Instagram-sida. Öppnas i nytt fönster.
-            </span>
-          </a>
-        </div>
+        <SoMeGroup />
+
         <div className={styles.ctaWrapper}>
           <SmartLink
             href="https://bokning.voady.se/hosfrisoren/hosfrisoren/"
@@ -43,7 +29,7 @@ function HeroStart() {
             rel="noopener noreferrer"
           >
             Boka online
-            {/* <ArrowRightIcon className="icon" /> */}
+            <ArrowRightIcon className="icon" />
           </SmartLink>
           <a
             className={`button inverted ${styles.phoneLink}`}
@@ -52,13 +38,28 @@ function HeroStart() {
             RING
           </a>
         </div>
-        <div>
+        <address className={styles.address}>
           <a href="tel:+4624710038">0247–100 38</a>
-        </div>
+          <Link href="/about">Torget 6, Leksand</Link>
+          <a href="mailto:jim@example.com">jim@example.com</a>
+        </address>
       </ColorBlock>
       <div
-        style={{ height: "40vh", width: "100vw", backgroundColor: "beige" }}
-      ></div>
+        style={{
+          height: "60vh",
+          width: "100vw",
+          maxWidth: "100%",
+          padding: "0 0 3rem 0",
+        }}
+      >
+        <div
+          className="container"
+          style={{
+            height: "100%",
+            backgroundColor: "#a6a49d",
+          }}
+        ></div>
+      </div>
     </>
   );
 }

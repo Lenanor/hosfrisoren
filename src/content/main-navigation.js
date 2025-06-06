@@ -28,7 +28,7 @@ export const mobileNavContent = [
   },
   {
     name: "Produkter",
-    href: "/products",
+    href: "/find",
   },
   {
     name: "Vanliga frågor",

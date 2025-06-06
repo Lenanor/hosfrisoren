@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import ColorBlock from "./ui/ColorBlock";
 import SmartLink from "./ui/SmartLink";
 
@@ -23,10 +25,21 @@ function Footer() {
 
         <div>
           <h2>Öppettider</h2>
-          <p>Våra öppettider kan variera, men i regel gäller:</p>
+          <p>
+            Öppettiderna kan variera, <br />i regel gäller:
+          </p>
           <p>mån: 10–18</p>
           <p>tis&ndash;fre: 9&ndash;18</p>
           <p>lö, sön: STÄNGT</p>
+        </div>
+
+        <div>
+          <h2>Kontakt</h2>
+          <address className={styles.address}>
+            <a href="tel:+4624710038">0247–100 38</a>
+            <Link href="/about">Torget 6, Leksand</Link>
+            <a href="mailto:jim@example.com">jim@example.com</a>
+          </address>
         </div>
 
         <div>

@@ -1,0 +1,21 @@
+.fadeInSection {
+  opacity: 0;
+  /* transform: translateY(100px); */
+  /* transition: opacity 0.8s ease-in, transform 0.8s ease-in; */
+  /* will-change: opacity, transform; */
+  will-change: opacity;
+  transition: opacity 0.8s ease-in;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fadeInSection {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+.isVisible {
+  opacity: 1;
+  /* transform: translateY(0); */
+}

@@ -1,9 +1,3 @@
-.list a {
-  font-size: 4rem;
-  color: var(--color-white);
-  white-space: nowrap;
-}
-
 @media screen and (max-width: 768px) {
   .nav.expanded {
     position: fixed;
@@ -11,6 +5,17 @@
     background-color: rgb(4, 61, 66);
     z-index: 1;
     padding: var(--header-padding-top) var(--document-gutter);
+  }
+
+  .list a {
+    font-size: 4rem;
+    color: var(--color-white);
+    white-space: nowrap;
+    transition: color 0.2s;
+  }
+
+  .list a:hover {
+    color: var(--color-gray);
   }
 
   .nav .list {
@@ -26,11 +31,11 @@
   }
 
   .nav.expanded .listItem {
-    transform: translateX(150%);
+    transform: translateX(100%);
     opacity: 0;
     animation-name: slide-in;
-    animation-duration: 300ms;
-    animation-timing-function: ease-in-out;
+    animation-duration: 200ms;
+    animation-timing-function: ease;
     animation-fill-mode: forwards;
     padding: 3px 0;
   }
@@ -88,7 +93,6 @@
   .list a {
     text-transform: uppercase;
     text-align: center;
-    font-size: 1.4rem;
-    color: var(--color-black);
+    font-size: var(--hero-links-size);
   }
 }

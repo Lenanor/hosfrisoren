@@ -13,10 +13,10 @@ function TwoColImage({ id, mediaDirection = "left" }) {
         alt=""
         fill
         sizes="
-        (min-width: 1440px) 474px,
-        (min-width: 1025px) calc((100vw - 180px) / 24 * 9),
-        (min-width: 769px) calc((100vw - 120px) / 24 * 11),
-        (min-width: 481px) calc((100vw - 120px) / 24 * 13),
+        (min-width: 1440px) 473px,
+        (min-width: 1025px) calc((100vw - 18rem) / 24 * 9),
+        (min-width: 769px) calc((100vw - 12rem) / 24 * 11),
+        (min-width: 481px) calc((100vw - 12rem) / 24 * 13),
         calc(100vw - 3.6rem)
         "
         style={{ objectFit: "cover" }}

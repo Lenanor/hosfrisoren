@@ -4,6 +4,7 @@ function ColorBlock({
   withGutter = true,
   withGrid = true,
   bg = "transparent",
+  className = "",
   children,
 }) {
   function getGutterClass(withGutter) {
@@ -19,7 +20,9 @@ function ColorBlock({
 
   return (
     <section className={styles[bg]}>
-      <div className={`container ${gutter} ${grid}`}>{children}</div>
+      <div className={`container ${gutter} ${grid} ${className}`}>
+        {children}
+      </div>
     </section>
   );
 }

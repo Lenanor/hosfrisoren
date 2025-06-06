@@ -12,8 +12,8 @@ function Header() {
   const path = usePathname();
 
   return (
-    <header className={`${styles.header} container-padding`}>
-      <div className={styles.wrapper}>
+    <header className={`${styles.header}`}>
+      <div className={`${styles.wrapper} container`}>
         <Link
           href="/"
           className={styles.link}
