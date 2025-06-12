@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { nunito, lora } from "../fonts/fonts";
+import { montserrat, raleway } from "../fonts/fonts";
 import "./globals.css";
 
 import Header from "@/components/Header";
@@ -28,7 +28,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="sv" className={`${lora.variable} ${nunito.variable}`}>
+    <html lang="sv" className={`${montserrat.variable} ${raleway.variable}`}>
       <head></head>
       <body>
         <Link href="#main-content" id="skip-link">

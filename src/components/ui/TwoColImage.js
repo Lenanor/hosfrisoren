@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import styles from "./TwoColImage.module.css";
 
-function TwoColImage({ id, mediaDirection = "left" }) {
+function TwoColImage({ id, mediaDirection = "default" }) {
   const src = `/images/${id}.jpg`;
 
   return (

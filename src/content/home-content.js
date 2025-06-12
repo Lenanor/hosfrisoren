@@ -4,9 +4,10 @@
 
 export const mainHeading = (
   <>
-    <span>Hårhantverk & kreativitet</span>
-    <span>Välkommen till</span>
     <span>Hos&nbsp;Frisören</span>
+    <span>Färg, form</span>
+    <span>& hårhantverk</span>
+    {/* <span>Välkommen till</span> */}
   </>
 );
 

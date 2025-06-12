@@ -11,6 +11,8 @@ import styles from "./Header.module.css";
 function Header() {
   const path = usePathname();
 
+  console.log(path);
+
   return (
     <header className={`${styles.header}`}>
       <div className={`${styles.wrapper} container`}>
@@ -18,12 +20,12 @@ function Header() {
           href="/"
           className={styles.link}
           aria-current={"/" === path ? "page" : undefined}
+          aria-label="Till startsidan"
         >
           <Image
             className={styles.logo}
             src="/logo_gray.svg"
             alt="Hos Frisören logotyp"
-            aria-label="Till startsidan"
             width={220}
             height={73}
             priority

@@ -58,14 +58,14 @@ export default function Home() {
         </ul>
       </ColorBlock>
 
-      <ColorBlock bg="bg-2">
-        <TwoColImage id={blockContentTwo.id} mediaDirection="right" />
-        <TwoColText mediaDirection="right">{blockContentTwo.body}</TwoColText>
+      <ColorBlock bg="bg-1">
+        <TwoColImage id={blockContentTwo.id} mediaDirection="flip" />
+        <TwoColText mediaDirection="flip">{blockContentTwo.body}</TwoColText>
       </ColorBlock>
 
       <LogoCarousel />
 
-      <ColorBlock bg="bg-3">
+      <ColorBlock bg="bg-1">
         <TwoColImage id={blockContentThree.id} />
         <TwoColText>{blockContentThree.body}</TwoColText>
       </ColorBlock>

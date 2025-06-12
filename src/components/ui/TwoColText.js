@@ -1,6 +1,6 @@
 import styles from "./TwoColText.module.css";
 
-function TwoColText({ mediaDirection = "left", children }) {
+function TwoColText({ mediaDirection = "default", children }) {
   return (
     <div className={`${styles.textParent} ${styles[mediaDirection]}`}>
       {children}

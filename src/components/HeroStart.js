@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 import ColorBlock from "./ui/ColorBlock";
 import SmartLink from "./ui/SmartLink";
@@ -6,6 +7,8 @@ import SoMeGroup from "./ui/SoMeGroup";
 import { ArrowRightIcon } from "@/assets/Icons";
 
 import { mainHeading } from "@/content/home-content";
+// import heroImageLg from "@/assets/images/hosfrisoren_2880.jpg";
+import heroImage from "@/assets/images/salong_2880.jpg";
 
 import styles from "./HeroStart.module.css";
 
@@ -40,25 +43,40 @@ function HeroStart() {
         </div>
         <address className={styles.address}>
           <a href="tel:+4624710038">0247–100 38</a>
-          <Link href="/about">Torget 6, Leksand</Link>
-          <a href="mailto:jim@example.com">jim@example.com</a>
+          <a href="https://www.google.com/maps/place/Hos+Fris%C3%B6ren/@60.7321752,14.9934318,17z/data=!3m1!4b1!4m6!3m5!1s0x4667910e347f90d5:0x506b69e1c5645a68!8m2!3d60.7321726!4d14.9960067!16s%2Fg%2F1hcb5zknq?entry=ttu&g_ep=EgoyMDI1MDYwNC4wIKXMDSoASAFQAw%3D%3D">
+            Torget 6, Leksand
+            <span className="sr-only">Länk till Google Maps</span>
+          </a>
+          <a href="mailto:info@hosfrisoren.se">info@hosfrisoren.se</a>
         </address>
       </ColorBlock>
-      <div
-        style={{
-          height: "60vh",
-          width: "100vw",
-          maxWidth: "100%",
-          padding: "0 0 3rem 0",
-        }}
-      >
-        <div
-          className="container"
-          style={{
-            height: "100%",
-            backgroundColor: "#a6a49d",
-          }}
-        ></div>
+      <div className={styles.heroImgContainer}>
+        {/* <div className={styles.heroImgOverlay}></div> */}
+        {/* <Image
+          alt="Vy över salongen"
+          src={heroImage}
+          sizes="100vw"
+          priority
+          className={styles.fullWidthImg}
+        /> */}
+        <picture>
+          <source
+            srcSet="/images/salong_mobile.jpg"
+            media="(max-width: 480px)"
+          />
+          <source
+            srcSet="/images/salong_tablet.jpg"
+            media="(max-width: 1024px)"
+          />
+          <img
+            className={styles.fullWidthImg}
+            src="/images/salong_desktop.jpg"
+            alt="Vy över frisörsalongen Hos Frisören i Leksand"
+            loading="eager"
+            width="1440"
+            height="617"
+          />
+        </picture>
       </div>
     </>
   );

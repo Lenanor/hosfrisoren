@@ -1,0 +1,25 @@
+.aboutIntro {
+  max-width: 680px;
+}
+
+.introImg {
+  margin: 2rem 0;
+  aspect-ratio: 20/9;
+}
+
+.stylistsGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media screen and (min-width: 769px) {
+  .stylistsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .stylistsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,17 +1,43 @@
+section:has(.colorBlock) {
+  height: 60vh;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (min-width: 769px) {
+  section:has(.colorBlock) {
+    height: 70vh;
+  }
+}
+
+.colorBlock {
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .mainHeading {
   grid-column: 1 / -1;
 }
 
 .mainHeading span {
   display: block;
-  font-size: 3.2rem;
-  /* white-space: nowrap; */
+  font-family: var(--montserrat);
+  font-weight: 500;
+  font-size: clamp(2rem, 11.5vw, 5.7rem);
+  white-space: nowrap;
   width: 100%;
   max-width: 100%;
 }
 
 .mainHeading span:first-child {
-  font-size: 12px;
+  font-size: 1.4rem;
+  font-family: var(--font-raleway);
+  color: var(--color-gray);
+  color: #5d5b5b;
+  margin-bottom: 0.2rem;
   display: block;
   text-transform: uppercase;
 }
@@ -19,6 +45,16 @@
 @media screen and (min-width: 769px) {
   .mainHeading {
     grid-column: 1 / 20;
+  }
+
+  .mainHeading span:first-child {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .mainHeading span {
+    font-size: clamp(6rem, 6.5vw, 7rem);
   }
 }
 
@@ -61,15 +97,11 @@
 }
 
 @media screen and (min-width: 769px) {
-  .colorBlock {
-    padding-bottom: 2rem;
-  }
-
   .address {
     display: block;
     grid-column: 1/-1;
     text-align: end;
-    font-family: var(--font-nunito);
+    font-family: var(--font-raleway);
     font-style: normal;
     padding: 1rem 0;
     margin-top: 6rem;
@@ -78,9 +110,80 @@
   .address a {
     padding: 1rem;
     font-size: var(--hero-links-size);
+    transition: color 0.3s ease;
+  }
+
+  .address a:hover {
+    color: var(--color-hover);
   }
 
   .address a:last-child {
     padding-right: 0;
   }
 }
+
+.heroImgContainer {
+  position: relative;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  aspect-ratio: 3 / 4; /* Default: mobil */
+}
+
+@media (min-width: 481px) {
+  .heroImgContainer {
+    aspect-ratio: 5 / 3;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heroImgContainer {
+    aspect-ratio: 7 / 3;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .heroImgContainer {
+    margin: 0 auto 9rem auto;
+  }
+}
+
+.heroImgOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    0deg,
+    rgb(99 84 3 / 8%) 0%,
+    rgb(10 10 10 / 0%) 100%
+  );
+}
+
+.fullWidthImg {
+  width: 100%;
+  /* max-width: 1440px;
+  margin: 0 auto; */
+  height: auto;
+  display: block;
+}
+
+@media only screen and (orientation: landscape) and (max-device-height: 568px) {
+  .mainHeading {
+    margin-bottom: 1rem;
+  }
+  .mainHeading span {
+    font-size: 4rem;
+  }
+  .ctaWrapper a {
+    padding: 0.8rem 2rem;
+  }
+  .address {
+    margin-top: 1rem;
+  }
+}
+
+/* @media only screen and (orientation: landscape) and (min-height: 769px) {
+  .mainHeading span {
+    font-size: clamp(4rem, 4vw, 6rem);
+  }
+} */

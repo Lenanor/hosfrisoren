@@ -4,12 +4,8 @@ export const mainNavContent = [
     href: "/about",
   },
   {
-    name: "Produkter",
-    href: "/products",
-  },
-  {
-    name: "Vanliga frågor",
-    href: "/faq",
+    name: "Öppettider",
+    href: "/open",
   },
   {
     name: "Boka",
@@ -27,12 +23,8 @@ export const mobileNavContent = [
     href: "/about",
   },
   {
-    name: "Produkter",
-    href: "/find",
-  },
-  {
-    name: "Vanliga frågor",
-    href: "/faq",
+    name: "Öppettider",
+    href: "/open",
   },
   {
     name: "Boka",

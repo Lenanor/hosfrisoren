@@ -1,20 +1,43 @@
 .footer {
+  --list-item-padding: padding: 0.2rem 0;
+
   background: var(--color-black);
+  padding-top: 3rem;
+  padding-bottom: 10rem;
 }
+
 
 .footer a,
 .footer p {
   font-size: 1.4rem;
+  margin: .4rem 0;
+  display: block;
+  color: var(--color-white)
+}
+
+.footer a {
+  color: #eaeaad;
+  transition: all 0.2s ease;
+}
+
+.footer a:hover {
+  color: var(--color-white);
+  margin-left: 0.5rem;
 }
 
 .footer h2 {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
 }
 
-.linkList a,
-.address a {
-  padding: 0.5rem 0;
-  display: block;
+.logoWrap {
+  width: 100px;
+  aspect-ratio: 220/73;
+  margin-bottom: 4rem;
+}
+
+.logoWrap img {
+  width: 100%;
 }
 
 .address {
@@ -23,13 +46,15 @@
 
 .grid {
   color: var(--color-white);
+  padding-bottom: 5rem;
+  border-bottom: 1px solid #5f5d5d;
 }
 
 .grid div + div {
   margin-top: 4rem;
 }
 
-@media screen and (min-width: 461px) {
+@media screen and (min-width: 481px) {
   .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -46,4 +71,13 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
   }
+}
+
+.copyrightWrapper {
+  width: 100%;
+}
+
+.copyrightWrapper p {
+  text-align: center;
+  font-size: 1.1rem;
 }

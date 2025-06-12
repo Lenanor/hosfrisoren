@@ -27,7 +27,7 @@
   border: 2px solid transparent; /* 3 */
   cursor: pointer; /* 3 */
   border-radius: 0.3em;
-  transition: border-color 200ms;
+  transition: border-color 600ms ease;
 }
 
 /**
@@ -46,7 +46,7 @@
 }
 
 .primaryAction:hover::before {
-  outline: 1px solid var(--color-black); /* 1 */
+  border-color: var(--color-gray);
 }
 
 .meta {
@@ -57,28 +57,23 @@
 .readMore {
   text-transform: uppercase;
   text-decoration: underline;
+  text-underline-offset: 0.3rem;
   text-align: end;
-  color: var(--color-gray);
+  color: var(--color-black);
   font-size: 1.4rem;
 }
 
 .card:hover .readMore {
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: underline;
 }
 
 .listIcon {
   margin: 0 0 1.2rem 0;
+  color: var(--color-gray);
 }
 
-/**
-   * 1. Push the secondary action to the right of the card.
-   * 2. Place secondary action on top of the card.
-   */
-/* .secondaryAction {
-  margin-left: auto;
-  z-index: 2;
-  position: relative; 
-  cursor: pointer;
+.meta span + span {
   display: block;
-} */
+  margin-top: 1rem;
+}

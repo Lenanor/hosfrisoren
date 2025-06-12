@@ -53,16 +53,16 @@ function MainNavigation({ path }) {
 
   return (
     <div className={styles.wrapper}>
+      <HamburgerButton
+        isExpanded={isOpen}
+        toggleMenu={() => setIsOpen((prev) => !prev)}
+        aria-expanded={isOpen}
+      />
       <nav
         className={`${styles.nav} ${isOpen ? styles.expanded : ""}`}
         aria-label="Huvudmeny"
         ref={menuRef}
       >
-        <HamburgerButton
-          isExpanded={isOpen}
-          toggleMenu={() => setIsOpen((prev) => !prev)}
-          aria-expanded={isOpen}
-        />
         <ul className={`${styles.list}`}>
           {linkContent.map((item, index) => (
             <li

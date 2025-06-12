@@ -5,6 +5,7 @@
 
 .textParent h2 {
   padding-top: 3rem;
+  width: 85%;
 }
 
 @media screen and (min-width: 481px) {
@@ -15,30 +16,31 @@
 }
 
 @media screen and (min-width: 769px) {
-  .textParent.left {
+  .textParent.default {
     grid-column: 13/-1;
   }
-  .textParent.right {
+  .textParent.flip {
     grid-column: 1/13;
     grid-row: 1;
   }
 
   .textParent h2 {
     padding-top: 0;
-    width: 90%;
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 1025px) {
-  .textParent.left {
+  .textParent.default {
     grid-column: 13/-3;
   }
-  .textParent.right {
+  .textParent.flip {
     grid-column: 3/13;
     grid-row: 1;
   }
 
   .textParent h2 {
     padding-top: 0;
+    width: 85%;
   }
 }

@@ -1,49 +1,57 @@
 :root {
   --color-white: #ffffff;
   --color-black: #171717;
-  --color-gray: #7f7f7f;
+  --color-gray: #a9a9a9;
+  --color-gray-light: #cfcece;
   --color-focus: #c901a1;
-  --bg-1: #f6efed;
+  --color-hover: #af7409;
+  --color-body: rgb(247, 247, 235);
+  --bg-1: rgba(240, 240, 232, 1);
   --bg-2: #f8f7f0;
   --bg-3: #dde1b9;
 
   --document-gutter: 1.8rem;
-  --header-padding-top: 2rem;
+  --header-padding-top: 1rem;
   --section-vertical-padding: 6rem;
 
-  --document-line-height: 1.5;
+  --document-line-height: 1.6;
   --heading-line-height: 1.1;
   --document-font-size: 1.6rem;
-  --hero-links-size: 1.4rem;
+  --hero-links-size: 1.6rem;
 
   /* --heading-1: clamp(18px, 6.6vw, 46px); */
   --heading-1: 4rem;
   --heading-2: 3.6rem;
-  --heading-3: 3.2rem;
-  --heading-4: 3rem;
+  --heading-3: 2.4rem;
+  --heading-4: 2rem;
 }
 
 @media screen and (min-width: 481px) {
   :root {
-    --document-gutter: 6rem;
-
     --header-padding-top: 3rem;
 
     --heading-1: 4.2rem;
     --heading-2: 4rem;
-    --heading-3: 2rem;
+    --heading-3: 2.6rem;
     --heading-4: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  :root {
+    --document-gutter: 6rem;
   }
 }
 
 @media screen and (min-width: 769px) {
   :root {
     --section-vertical-padding: 10rem;
+    --document-gutter: 6rem;
 
-    --document-font-size: 1.6rem;
+    --document-font-size: 1.8rem;
     --heading-1: 6rem;
-    --heading-2: 4.2rem;
-    --heading-3: 2.4rem;
+    --heading-2: 3.8rem;
+    --heading-3: 2.8rem;
     --heading-4: 2rem;
   }
 }
@@ -55,7 +63,7 @@
 
     --heading-1: 6rem;
     --heading-2: 5.2rem;
-    --heading-3: 2.4rem;
+    --heading-3: 3rem;
     --heading-4: 2rem;
 
     --document-font-size: 1.8rem;
@@ -68,9 +76,7 @@ html {
   height: 100%;
   overflow-x: hidden;
   cursor: default;
-  background: #fff;
   color: var(--color-black);
-  line-height: var(--document-line-height);
   -webkit-tap-highlight-color: transparent;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -81,12 +87,12 @@ html {
 }
 
 body {
-  --color-body: rgb(240, 240, 232);
   color: var(--color-black);
-  background: var(--color-white);
   background: var(--color-body);
-  font-family: var(--font-nunito);
+  font-family: var(--font-raleway);
+  font-size: var(--document-font-size);
   font-weight: 400;
+  line-height: var(--document-line-height);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -108,14 +114,14 @@ h1 {
   white-space: nowrap;
   width: 100%;
   max-width: 100%;
-  border: 1px solid rgb(240, 29, 240);
+  /* border: 1px solid rgb(240, 29, 240); */
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: var(--font-nunito), serif;
+  font-family: var(--font-montserrat);
   font-weight: 600;
   line-height: var(--heading-line-height);
 }
@@ -128,10 +134,14 @@ h2 {
 h3,
 h3 a {
   font-size: var(--heading-3);
-  font-family: inherit;
+  font-family: var(--font-montserrat);
   font-weight: 600;
-  line-height: 1.2;
+  line-height: var(--heading-line-height);
   margin-bottom: 1.2rem;
+}
+
+h4 {
+  font-size: var(--heading-4);
 }
 
 @media screen and (min-width: 769px) {
@@ -141,14 +151,6 @@ h3 a {
   h2 {
     margin-bottom: 2rem;
   }
-}
-
-p,
-a,
-span {
-  font-family: var(--font-nunito), sans-serif;
-  font-weight: 400;
-  font-size: var(--document-font-size);
 }
 
 p + p {
@@ -163,15 +165,6 @@ a {
 a,
 button {
   cursor: pointer;
-}
-
-a {
-  transition: text-shadow 0.2s;
-}
-
-a:hover {
-  text-shadow: 0 0 0.5px currentColor;
-  color: gray;
 }
 
 ul {
@@ -250,7 +243,7 @@ button style, filled and inverted
 
 .button {
   font-size: 1.4rem;
-  padding: 0.5rem 1.2rem;
+  padding: 0.8rem 1.6rem;
   margin-top: 4rem;
   color: var(--color-white);
   background-color: var(--color-black);
@@ -264,7 +257,7 @@ button style, filled and inverted
   cursor: pointer;
   position: relative;
   text-transform: uppercase;
-  font-family: var(--font-nunito);
+  font-family: var(--font-raleway);
   font-weight: 700;
   display: inline-flex;
   align-items: center;

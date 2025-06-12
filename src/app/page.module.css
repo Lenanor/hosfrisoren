@@ -2,12 +2,6 @@
   min-height: 100svh;
 }
 
-/* .mainHeading span {
-  font-family: "Lora", Georgia, "Times New Roman", serif;
-  font-size: var(--heading-1);
-  display: block;
-} */
-
 .cardList {
   grid-column: 1/-1;
   display: grid;

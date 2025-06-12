@@ -1,8 +1,5 @@
 .header {
-  padding-left: var(--document-gutter);
-  padding-right: var(--document-gutter);
-  padding-top: 0.6rem;
-  padding-bottom: 0.6rem;
+  padding: var(--header-padding-top) var(--document-gutter);
 }
 
 @media screen and (min-width: 481px) {
@@ -13,24 +10,23 @@
 
 @media screen and (min-width: 481px) {
   .header {
-    padding: 1.6rem 3rem;
+    padding: 1rem 3rem;
   }
 }
 
 .wrapper {
   position: relative;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
-.link {
-  padding-top: 1.18rem;
-  width: 108px;
-  height: auto;
+.wrapper {
+  max-width: 1600px;
 }
 
 .link .logo {
-  width: 100%;
+  width: 80px;
   height: auto;
 }
 
@@ -40,9 +36,9 @@
 }
 
 @media screen and (min-width: 769px) {
-  .link {
-    padding-top: 0.3rem;
-    width: 146px;
+  .link .logo {
+    width: 100px;
+    height: auto;
   }
 
   .logo {

@@ -1,34 +1,59 @@
 import ColorBlock from "@/components/ui/ColorBlock";
+import TwoColImage from "@/components/ui/TwoColImage";
+import TwoColText from "@/components/ui/TwoColText";
 import Card from "@/components/ui/Card";
+
+import styles from "./page.module.css";
 
 import {
   introText,
   introStylists,
   stylistsData,
+  test,
 } from "@/content/about-content";
 
 function About() {
   return (
     <>
-      <ColorBlock withGrid={false}>
+      <ColorBlock bg="bg-2" withGrid={false}>
         <h1>Om oss</h1>
-        <p>{introText}</p>
+        <div className={styles.aboutIntro}>{introText}</div>
+        <div className={styles.introImg}>
+          <div
+            style={{ width: "100%", height: "100%", backgroundColor: "gray" }}
+          ></div>
+        </div>
       </ColorBlock>
-      <ColorBlock withGrid={false}>
-        <div
-          style={{ height: "60vh", width: "100%", backgroundColor: "beige" }}
-        ></div>
+
+      <ColorBlock bg="bg-3" withGrid={false}>
         <h2>{stylistsData.heading}</h2>
-        <p>{introStylists}</p>
-        <ul>
+        <div className={styles.aboutIntro}>{introStylists}</div>
+
+        <ul className={styles.stylistsGrid}>
           {stylistsData.cards.map((data) => (
-            <Card key={data.title} title={data.title} body={data.body} />
+            <Card
+              key={data.title}
+              icon={data.icon}
+              title={data.title}
+              body={data.body}
+            />
           ))}
         </ul>
       </ColorBlock>
       <ColorBlock withGrid={false}>
         <h2>Vill du jobba med oss?</h2>
-        <p>Vi söker alltid efter trevliga kollegor.....</p>
+        <p>
+          {" "}
+          Vi är alltid intresserade av att bli fler kreativa, ambitiösa och
+          serviceinriktade frisörer i gänget. Hel- eller deltid. Hos oss finns
+          stora möjligheter att utvecklas som frisör och en gemenskap där vi
+          inspirerar och lyfter varandra och har roligt. Vi är en flexibel
+          arbetsplats, balansen mellan jobb och fritid måste fungera för att vi
+          ska må bra så att vi orkar leverera vårt bästa till våra kunder.
+          Godkänd frisörutbildning och gesällbrev är ett viktigt men det vi
+          värdesätter mest är din personlighet och att du har driv. Vi är
+          nyfikna på att höra från dig, kontakta oss på xxxxxxxx.
+        </p>
         <h2>Söker du praktik?</h2>
         <p>Vi söker alltid efter trevliga kollegor.....</p>
       </ColorBlock>
