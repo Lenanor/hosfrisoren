@@ -51,14 +51,6 @@ function HeroStart() {
         </address>
       </ColorBlock>
       <div className={styles.heroImgContainer}>
-        {/* <div className={styles.heroImgOverlay}></div> */}
-        {/* <Image
-          alt="Vy över salongen"
-          src={heroImage}
-          sizes="100vw"
-          priority
-          className={styles.fullWidthImg}
-        /> */}
         <picture>
           <source
             srcSet="/images/salong_mobile.jpg"

@@ -1,4 +1,9 @@
 .aboutIntro {
+  padding-top: 15rem;
+  padding-bottom: var(--document-gutter);
+}
+
+.aboutIntroText {
   max-width: 680px;
 }
 
@@ -10,6 +15,20 @@
 .stylistsGrid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
+  background-color: beige;
+  margin-top: 2rem;
+  border-radius: 3px;
+  padding: 1rem;
+}
+
+.stylistsGrid h3 span {
+  display: block;
+  font-size: 1.4rem;
+  padding-top: 0.5rem;
+}
+
+.stylistsGrid p {
+  font-size: 1.4rem;
 }
 
 @media screen and (min-width: 769px) {
@@ -21,5 +40,40 @@
 @media screen and (min-width: 1025px) {
   .stylistsGrid {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.mainHeading span {
+  display: block;
+  font-family: var(--montserrat);
+  font-size: clamp(2rem, 11.5vw, 5.7rem);
+  white-space: nowrap;
+  width: 100%;
+  max-width: 100%;
+}
+
+.mainHeading span:first-child {
+  font-size: 1.4rem;
+  font-family: var(--font-raleway);
+  color: var(--color-gray);
+  color: #5d5b5b;
+  margin-bottom: 0.2rem;
+  display: block;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 769px) {
+  .mainHeading {
+    grid-column: 1 / 20;
+  }
+
+  .mainHeading span:first-child {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .mainHeading span {
+    font-size: clamp(6rem, 6.5vw, 7rem);
   }
 }

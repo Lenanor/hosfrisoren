@@ -7,7 +7,7 @@ import styles from "./Footer.module.css";
 function Footer() {
   return (
     <footer className={styles.footer}>
-      <div className="container container-padding">
+      <div className={styles.footerContent}>
         <div className={styles.logoWrap}>
           <Image
             src="/logo_gray.svg"

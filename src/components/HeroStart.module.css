@@ -8,7 +8,9 @@ section:has(.colorBlock) {
 
 @media screen and (min-width: 769px) {
   section:has(.colorBlock) {
-    height: 70vh;
+    height: max-content;
+    padding-top: 15rem;
+    padding-bottom: 1.5rem;
   }
 }
 
@@ -25,7 +27,6 @@ section:has(.colorBlock) {
 .mainHeading span {
   display: block;
   font-family: var(--montserrat);
-  font-weight: 500;
   font-size: clamp(2rem, 11.5vw, 5.7rem);
   white-space: nowrap;
   width: 100%;
@@ -161,8 +162,6 @@ section:has(.colorBlock) {
 
 .fullWidthImg {
   width: 100%;
-  /* max-width: 1440px;
-  margin: 0 auto; */
   height: auto;
   display: block;
 }

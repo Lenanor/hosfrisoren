@@ -92,18 +92,21 @@ export const cardsData = {
   heading: "",
   cards: [
     {
+      id: "scissors",
       icon: "scissors",
       title: "Vi är licencierade frisörer",
       body: "Hos Frisören är medlem i frisörföreningen och personalen har gesällbrev eller mästarbrev. Det garanterar att vi har...",
       cta: "/about",
     },
     {
+      id: "clock",
       icon: "clock",
       title: "Öppettider",
       body: "Hos Frisören är medlem i frisörföreningen och personalen har gesällbrev eller mästarbrev. Det garanterar att vi har...",
       cta: "/about",
     },
     {
+      id: "calender",
       icon: "calender",
       title: "Tidsbokning",
       body: "Hos Frisören är medlem i frisörföreningen och personalen har gesällbrev eller mästarbrev. Det garanterar att vi har...",

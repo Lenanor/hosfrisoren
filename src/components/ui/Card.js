@@ -16,12 +16,6 @@ function Card({ title, body, icon = null, cta = null }) {
     if (icon === "scissors") {
       return <Scissors className={styles.listIcon} />;
     }
-
-    // return (
-    //   <div
-    //     style={{ width: "100px", height: "100px", backgroundColor: "black" }}
-    //   ></div>
-    // );
   }
 
   const iconType = getIcon(icon);

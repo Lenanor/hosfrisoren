@@ -15,9 +15,12 @@ import {
 function About() {
   return (
     <>
-      <ColorBlock bg="bg-2" withGrid={false}>
-        <h1>Om oss</h1>
-        <div className={styles.aboutIntro}>{introText}</div>
+      <ColorBlock bg="bg-2" className={styles.aboutIntro} withGrid={false}>
+        <h1 className={styles.mainHeading}>
+          <span>Hos Frisören</span>
+          <span>Om oss</span>
+        </h1>
+        <div className={styles.aboutIntroText}>{introText}</div>
         <div className={styles.introImg}>
           <div
             style={{ width: "100%", height: "100%", backgroundColor: "gray" }}
@@ -30,14 +33,17 @@ function About() {
         <div className={styles.aboutIntro}>{introStylists}</div>
 
         <ul className={styles.stylistsGrid}>
-          {stylistsData.cards.map((data) => (
-            <Card
-              key={data.title}
-              icon={data.icon}
-              title={data.title}
-              body={data.body}
-            />
-          ))}
+          {stylistsData.cards.map((data) => {
+            console.log(data.id);
+            return (
+              <Card
+                key={data.id}
+                icon={data.icon}
+                title={data.title}
+                body={data.body}
+              />
+            );
+          })}
         </ul>
       </ColorBlock>
       <ColorBlock withGrid={false}>

@@ -1,6 +1,8 @@
 .card {
   position: relative;
   padding: 2rem;
+  border-radius: 3px;
+  background-color: var(--color-bg-cards);
 }
 
 /**
@@ -40,7 +42,8 @@
 /**
    * 1. Display interactivity on hover/focus by highlighting the border.
    */
-.primaryAction:focus::before {
+/* :where(body) :focus-visible */
+.primaryAction:focus-visible::before {
   outline: 3px solid var(--color-focus); /* 1 */
   outline-offset: 1px;
 }
@@ -50,7 +53,7 @@
 }
 
 .meta {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   margin: 0 0 1.2rem 0;
 }
 
@@ -70,7 +73,7 @@
 
 .listIcon {
   margin: 0 0 1.2rem 0;
-  color: var(--color-gray);
+  /* color: var(--color-gray); */
 }
 
 .meta span + span {

@@ -48,7 +48,7 @@ export default function Home() {
         <ul className={styles.cardList}>
           {cardsData.cards.map((card) => (
             <Card
-              key={card.title}
+              key={card.id}
               icon={card.icon}
               title={card.title}
               body={card.body}
