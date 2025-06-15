@@ -1,9 +1,11 @@
 import Link from "next/link";
 
+import SmartLink from "./SmartLink";
+import FadeInOnScroll from "./FadeInOnScroll";
+
 import { Calender, Clock, Scissors } from "@/assets/Icons";
 
 import styles from "./Card.module.css";
-import SmartLink from "./SmartLink";
 
 function Card({ title, body, icon = null, cta = null }) {
   function getIcon(icon) {
@@ -31,18 +33,20 @@ function Card({ title, body, icon = null, cta = null }) {
     );
 
   return (
-    <li className={styles.card}>
-      {iconType}
-      <div className={styles.content}>
-        {heading}
-        <p className={styles.meta}>{body}</p>
-        {cta && (
-          <p className={styles.readMore} aria-hidden="true">
-            Läs mer
-          </p>
-        )}
-      </div>
-    </li>
+    <FadeInOnScroll>
+      <li className={styles.card}>
+        {iconType}
+        <div className={styles.content}>
+          {heading}
+          <p className={styles.meta}>{body}</p>
+          {cta && (
+            <p className={styles.readMore} aria-hidden="true">
+              Läs mer
+            </p>
+          )}
+        </div>
+      </li>
+    </FadeInOnScroll>
   );
 }
 

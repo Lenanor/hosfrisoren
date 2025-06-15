@@ -1,24 +1,42 @@
-.aboutIntro {
-  padding-top: 15rem;
-  padding-bottom: var(--document-gutter);
+.mainHeading {
+  font-size: clamp(2rem, 11.5vw, 5.7rem);
+  width: 100%;
+  max-width: 85%;
 }
 
-.aboutIntroText {
-  max-width: 680px;
+@media screen and (min-width: 1025px) {
+  .mainHeading {
+    font-size: clamp(6rem, 6.5vw, 7rem);
+  }
 }
 
-.introImg {
-  margin: 2rem 0;
-  aspect-ratio: 20/9;
+.introText {
+  padding-left: 3rem;
+}
+
+.introText p:first-child {
+  font-size: calc(var(--document-font-size) + 2px);
+  font-weight: 600;
+  width: 90%;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 769px) {
+  .introText {
+    padding-left: 3rem;
+    max-width: 900px;
+  }
+
+  .introText p:first-child {
+    max-width: 550px;
+  }
 }
 
 .stylistsGrid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  background-color: beige;
+  gap: 2rem;
   margin-top: 2rem;
-  border-radius: 3px;
-  padding: 1rem;
 }
 
 .stylistsGrid h3 span {
@@ -27,53 +45,57 @@
   padding-top: 0.5rem;
 }
 
+.stylistsGrid li {
+  background-color: var(--color-green-dark);
+  color: var(--color-black);
+  padding: 3rem;
+  border-radius: 3px;
+}
+
+.stylistsGrid h3 span {
+  color: #7b7b7b;
+}
+
+.stylistsGrid svg {
+  background-color: var(--color-green);
+  width: 60px;
+  height: 60px;
+  border-radius: 52%;
+  padding: 1.5rem;
+}
+
 .stylistsGrid p {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 @media screen and (min-width: 769px) {
   .stylistsGrid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .stylistsGrid li {
+    border-radius: 6px;
+  }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1201px) {
   .stylistsGrid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-.mainHeading span {
-  display: block;
-  font-family: var(--montserrat);
-  font-size: clamp(2rem, 11.5vw, 5.7rem);
-  white-space: nowrap;
-  width: 100%;
-  max-width: 100%;
+.careerBlock {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(45rem, 100%), 1fr));
+  gap: 6rem;
 }
 
-.mainHeading span:first-child {
-  font-size: 1.4rem;
-  font-family: var(--font-raleway);
-  color: var(--color-gray);
-  color: #5d5b5b;
-  margin-bottom: 0.2rem;
-  display: block;
-  text-transform: uppercase;
-}
-
-@media screen and (min-width: 769px) {
-  .mainHeading {
-    grid-column: 1 / 20;
-  }
-
-  .mainHeading span:first-child {
-    font-size: 1.6rem;
-  }
+.workText {
+  max-width: 650px;
 }
 
 @media screen and (min-width: 1025px) {
-  .mainHeading span {
-    font-size: clamp(6rem, 6.5vw, 7rem);
+  .workText h2 {
+    max-width: 70%;
   }
 }

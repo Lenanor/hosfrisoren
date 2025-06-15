@@ -1,23 +1,24 @@
 export const introText = (
-  <p>
-    I lokalen på Torget 6 har frisörer varit verksamma sedan ...., här sitter
-    verkligen hantverket i väggarna. Lisa tog över som ägare 19xx då hon öppnade
-    Hos Frisören.
-  </p>
-);
-
-export const introStylists = (
-  <p>
-    Hos Frisören är medlem i Frisörförbundet och vi som jobbar här är utbildade
-    och licencierade frisörer eller trainees.
-  </p>
+  <>
+    <p>
+      I lokalen på Torget 6 har frisörer varit verksamma sedan ...., här sitter
+      verkligen hantverket i väggarna. Lisa tog över som ägare 19xx då hon
+      öppnade Hos Frisören i egen regi.
+    </p>
+    <p>
+      Hos Frisören är medlem i Frisörförbundet och vi som jobbar här är
+      utbildade och licencierade frisörer eller trainees under utbildning.
+      Inspiration och nya tekniker är viktigt, därför går vi regelbunder kurser
+      för att hålla oss uppdaterade.
+    </p>
+  </>
 );
 
 // -----------------------------
 //   Aboutpage: Cards
 // -----------------------------
 export const stylistsData = {
-  heading: "Frisörerna",
+  heading: "Frisörer",
   cards: [
     {
       id: "lisa",
@@ -30,16 +31,20 @@ export const stylistsData = {
       body: (
         <>
           <span>
-            Att klippa fram en snygg form och förändra med färg är det som jag
-            gillar bäst med mitt arbete. Ingen människa är den andra lik, och
-            varje frisyr behöver sin egen lösning. När allt stämmer och
-            resultatet får en person att stråla så känns jobbet extra
-            meningsfullt. Mitt bästa tips för ditt hår är Epres inpackning. Den
-            ger verkligen resultat och är lätt att använda.
+            Att tänka ut och klippa fram en snygg form och att lyfta håret med
+            färg är det som jag gillar bäst med mitt arbete. Ingen människa är
+            den andra lik, och varje frisyr behöver sin egen lösning. När allt
+            stämmer och resultatet får en person att stråla så känns jobbet
+            extra meningsfullt.
+          </span>
+          <span>
+            Något jag vill tipsa om för ditt hår är Epres inpackning. Den ger
+            verkligen resultat och är väldigt lätt att använda. Vår bästa
+            produkt, enligt mig.
           </span>
           <span>
             Utanför jobbet tillbringar jag gärna tid i trädgården hemma på
-            Sollerön där jag odlar grönsaker och blommor samt för en ständig
+            Sollerön. Där odlar jag grönsaker och blommor samt för en ständig
             kamp mot rådjuren. Annars hittar du mig på gymmet eller försjunken i
             ett pussel.
           </span>
@@ -90,16 +95,32 @@ export const stylistsData = {
       body: (
         <>
           <span>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Jag är frisör-trainee och har jobbat aktivt i 1,5 år. Planen är att
+            göra mitt gesällprov i slutet av året. Mycket av min inspiration
+            hämtar jag från mina fantastiska kollegor och alla kunder som slår
+            sig ner i min stol. Att träffa kunder och få göra dem fina ger mig
+            energi och glädje varje dag.
           </span>
+
           <span>
-            Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
+            Mitt favoritområde är klippning, oavsett om det gäller korta eller
+            långa frisyrer. Extra roligt är det med makeovers där en snygg
+            klippning kombineras med en riktigt fin färg.
+          </span>
+
+          <span>
+            Många vanliga problem som friss, glanslöst hår eller kluvna toppar
+            beror ofta på torrt hår. Mitt bästa råd, oavsett hårtyp, är att
+            satsa på återfuktande produkter. En riktigt bra inpackning en gång i
+            veckan och en leave-in-produkt efter duschen gör stor skillnad.
+            Fönar eller stylar du håret är värmeskydd ett måste. Jag kan varmt
+            rekommendera Kevin Murphy Everlasting.Colour Leave-In!
+          </span>
+
+          <span>
+            När jag inte jobbar spenderar jag tid med min lilla familj. Jag är
+            också väldigt pysslig av mig och tycker om att vara ute i trädgården
+            hemma i Gagnef på fritiden.
           </span>
         </>
       ),
@@ -107,3 +128,56 @@ export const stylistsData = {
     },
   ],
 };
+
+// -----------------------------
+//   Aboutpage: Work with us
+// -----------------------------
+export const careerData = [
+  {
+    id: "career-1",
+    heading: "Vill du jobba med oss?",
+    body: (
+      <>
+        <p>
+          Vi är alltid intresserade av att bli fler kreativa, ambitiösa och
+          serviceinriktade frisörer i vårt gäng. Hos oss finns stora möjligheter
+          att utvecklas som frisör, vara med och påverka och en gemenskap där vi
+          inspirerar och lyfter varandra. Vi är en flexibel arbetsplats,
+          balansen mellan jobb och fritid måste fungera för att vi ska må bra
+          och orka leverera vårt bästa till våra kunder.
+        </p>
+        <p>
+          Det är viktigt att du har godkänd frisörutbildning och gesällbrev. För
+          att trivas hos oss bör du även vara social, tycka om att ta ansvar och
+          ha ett driv att utvecklas som frisör.
+        </p>
+        <p>
+          Låter det intressant? I så fall är vi nyfikna på att höra från dig!
+          Kom förbi salongen eller ring och prata med Lisa.
+        </p>
+      </>
+    ),
+  },
+  {
+    id: "career-2",
+    heading: "Söker du praktik?",
+    body: (
+      <>
+        <p>
+          Det är viktigt för frisörbranchen med återväxt av skickliga frisörer
+          och vi ter gärna emot trainees när det finns. Du blir en i gänget och
+          får möjlighet att öva på allt du behöver för att göra ditt gesällprov,
+          under handledning av erfarna kollegor.
+        </p>
+        <p>
+          För att trivas hos oss bör du vara social, tycka om att ta ansvar och
+          ha ett driv att utvecklas som frisör.
+        </p>
+        <p>
+          Låter det intressant? I så fall är vi nyfikna på att höra från dig!
+          Kom förbi salongen eller ring och prata med Lisa.
+        </p>
+      </>
+    ),
+  },
+];

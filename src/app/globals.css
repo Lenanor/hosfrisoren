@@ -1,15 +1,16 @@
 :root {
   --color-white: #ffffff;
   --color-black: #171717;
-  --color-gray: #a9a9a9;
+  --color-gray: #5d5b5b;
   --color-gray-light: #cfcece;
-  --color-bg-cards: #f0ead8;
+  --color-green: #dee6ba;
+  --color-green-dark: #cdd59b;
   --color-focus: #c901a1;
   --color-hover: #af7409;
   --color-body: rgb(247, 247, 235);
   --bg-1: rgba(240, 240, 232, 1);
   --bg-2: #f8f7f0;
-  --bg-3: #dde1b9;
+  --bg-3: var(--color-green);
 
   --document-gutter: 1.8rem;
   --header-padding-top: 1rem;
@@ -110,11 +111,15 @@ main {
 
 h1 {
   font-size: var(--heading-1);
-  margin-bottom: 4rem;
-  white-space: nowrap;
+  margin-bottom: 2rem;
   width: 100%;
   max-width: 100%;
-  /* border: 1px solid rgb(240, 29, 240); */
+}
+
+@media screen and (min-width: 769px) {
+  h1 {
+    margin-bottom: 3rem;
+  }
 }
 
 h1,
@@ -294,7 +299,7 @@ button style, filled and inverted
   width: 100%;
   height: 0;
   transform-origin: left;
-  transition: height 0.1s ease;
+  transition: height 0.25s ease;
 }
 
 .inverted::after {
@@ -329,4 +334,8 @@ a.inverted > .icon {
 
 a.inverted:hover > .icon {
   fill: var(--color-white);
+}
+
+#career {
+  scroll-margin-top: 5rem;
 }

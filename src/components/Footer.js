@@ -47,6 +47,9 @@ function Footer() {
                     <SmartLink href={item.href}>{item.name}</SmartLink>
                   </li>
                 ))}
+                <li className={styles.linkList}>
+                  <SmartLink href="/about#career">Jobba hos oss</SmartLink>
+                </li>
               </ul>
             </nav>
           </div>
