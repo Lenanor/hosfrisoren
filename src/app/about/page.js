@@ -4,14 +4,12 @@ import Card from "@/components/ui/Card";
 import styles from "./page.module.css";
 
 import { introText, stylistsData, careerData } from "@/content/about-content";
+import SubPageIntro from "@/components/ui/SubPageIntro";
 
 function About() {
   return (
     <>
-      <ColorBlock className={styles.aboutIntro} withGrid={false}>
-        <h1 className={styles.mainHeading}>Om oss</h1>
-        <div className={styles.introText}>{introText}</div>
-      </ColorBlock>
+      <SubPageIntro title="Om oss" textContent={introText}></SubPageIntro>
 
       <ColorBlock bg="bg-3" withGrid={false} className={styles.stylistsBlock}>
         <h2>{stylistsData.heading}</h2>

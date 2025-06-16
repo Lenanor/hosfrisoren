@@ -5,6 +5,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 import MainNavigation from "./MainNavigation";
+import { LogoIcon } from "@/assets/Icons";
 
 import styles from "./Header.module.css";
 
@@ -22,14 +23,8 @@ function Header() {
           aria-current={"/" === path ? "page" : undefined}
           aria-label="Till startsidan"
         >
-          <Image
-            className={styles.logo}
-            src="/logo_gray.svg"
-            alt="Hos Frisören logotyp"
-            width={220}
-            height={73}
-            priority
-          />
+          <LogoIcon />
+          <span className="sr-only">Till startsidan</span>
         </Link>
         <MainNavigation path={path} />
       </div>

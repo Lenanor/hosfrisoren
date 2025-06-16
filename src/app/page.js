@@ -43,7 +43,7 @@ export default function Home() {
       <MediaBlock />
 
       {/* CARD LIST */}
-      <ColorBlock withGrid={false}>
+      <ColorBlock withGrid={false} bg="bg-3">
         {cardsData?.heading && <h2>{cardsData.heading}</h2>}
         <ul className={styles.cardList}>
           {cardsData.cards.map((card) => (
@@ -65,7 +65,7 @@ export default function Home() {
 
       <LogoCarousel />
 
-      <ColorBlock bg="bg-1">
+      <ColorBlock bg="bg-3">
         <TwoColImage id={blockContentThree.id} />
         <TwoColText>{blockContentThree.body}</TwoColText>
       </ColorBlock>

@@ -16,11 +16,16 @@
 
 
 .footer a,
-.footer p {
+.footer p,
+.footer span {
   font-size: 1.4rem;
-  margin: .4rem 0;
+  margin: 1.4rem 0;
   display: block;
   color: var(--color-white)
+}
+
+.footer span {
+  display: block;
 }
 
 .footer a {
@@ -39,9 +44,9 @@
 }
 
 .logoWrap {
-  width: 100px;
-  aspect-ratio: 220/73;
-  margin-bottom: 1rem;
+  width: 70px;
+  height: auto;
+  margin-bottom: 3rem;
 }
 
 .logoWrap img {

@@ -1,0 +1,23 @@
+.instaLink {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.instaLink:hover {
+  color: var(--color-hover);
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.colorBackground {
+  background-color: var(--color-green);
+  padding: 3rem;
+  margin-top: 5rem;
+  border-radius: 6px;
+}
+
+.colorBackground h2 {
+  font-size: 3rem;
+}

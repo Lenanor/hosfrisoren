@@ -7,8 +7,6 @@ import SoMeGroup from "./ui/SoMeGroup";
 import { ArrowRightIcon } from "@/assets/Icons";
 
 import { mainHeading } from "@/content/home-content";
-// import heroImageLg from "@/assets/images/hosfrisoren_2880.jpg";
-import heroImage from "@/assets/images/salong_2880.jpg";
 
 import styles from "./HeroStart.module.css";
 
@@ -19,7 +17,7 @@ function HeroStart() {
         className={styles.colorBlock}
         withGutter={true}
         withGrid={true}
-        bg="transparent"
+        bg="bg-4"
       >
         <h1 className={styles.mainHeading}>{mainHeading}</h1>
         <SoMeGroup />
@@ -30,6 +28,7 @@ function HeroStart() {
             className="button"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Till extern bokningssida"
           >
             Boka online
             <ArrowRightIcon className="icon" />
@@ -51,24 +50,27 @@ function HeroStart() {
         </address>
       </ColorBlock>
       <div className={styles.heroImgContainer}>
-        <picture>
-          <source
-            srcSet="/images/salong_mobile.jpg"
-            media="(max-width: 480px)"
-          />
-          <source
-            srcSet="/images/salong_tablet.jpg"
-            media="(max-width: 1024px)"
-          />
-          <img
-            className={styles.fullWidthImg}
-            src="/images/salong_desktop.jpg"
-            alt="Vy över frisörsalongen Hos Frisören i Leksand"
-            loading="eager"
-            width="1440"
-            height="617"
-          />
-        </picture>
+        <div className={styles.heroImgWidth}>
+          <picture>
+            <source
+              srcSet="/images/salong_mobile.jpg"
+              media="(max-width: 480px)"
+            />
+            <source
+              srcSet="/images/salong_tablet.jpg"
+              media="(max-width: 1024px)"
+            />
+            <img
+              className={styles.fullWidthImg}
+              src="/images/salong_desktop.jpg"
+              alt="Vy över frisörsalongen Hos Frisören i Leksand"
+              loading="eager"
+              width="1440"
+              height="617"
+            />
+            <div className={styles.heroImgOverlay}></div>
+          </picture>
+        </div>
       </div>
     </>
   );

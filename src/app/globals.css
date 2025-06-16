@@ -5,12 +5,12 @@
   --color-gray-light: #cfcece;
   --color-green: #dee6ba;
   --color-green-dark: #cdd59b;
-  --color-focus: #c901a1;
+  --color-focus: #f4860b;
   --color-hover: #af7409;
-  --color-body: rgb(247, 247, 235);
   --bg-1: rgba(240, 240, 232, 1);
   --bg-2: #f8f7f0;
   --bg-3: var(--color-green);
+  --bg-4: rgb(247, 247, 235);
 
   --document-gutter: 1.8rem;
   --header-padding-top: 1rem;
@@ -89,7 +89,7 @@ html {
 
 body {
   color: var(--color-black);
-  background: var(--color-body);
+  background: var(--bg-4);
   font-family: var(--font-raleway);
   font-size: var(--document-font-size);
   font-weight: 400;

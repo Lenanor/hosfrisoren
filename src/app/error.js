@@ -19,8 +19,11 @@ export default function Error({ error, reset }) {
           padding: "2rem",
           backgroundColor: "#e7e7e7",
           color: "red",
-          fontSize: "13px",
-          width: "max-content",
+          fontSize: "14px",
+          width: "100%",
+          maxWidth: "650px",
+          height: "auto",
+          whiteSpace: "initial",
         }}
       >
         {error.message}

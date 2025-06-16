@@ -125,6 +125,12 @@ section:has(.colorBlock) {
 }
 
 .heroImgContainer {
+  width: 100%;
+  background-color: var(--bg-4);
+  padding-bottom: var(--section-vertical-padding);
+}
+
+.heroImgWidth {
   position: relative;
   max-width: 1440px;
   width: 100%;
@@ -134,21 +140,21 @@ section:has(.colorBlock) {
 }
 
 @media (min-width: 481px) {
-  .heroImgContainer {
+  .heroImgWidth {
     aspect-ratio: 5 / 3;
   }
 }
 
 @media (min-width: 1024px) {
-  .heroImgContainer {
+  .heroImgWidth {
     aspect-ratio: 7 / 3;
   }
 }
 
 @media screen and (min-width: 1441px) {
-  .heroImgContainer {
+  /* .heroImgContainer {
     margin: 0 auto 9rem auto;
-  }
+  } */
 }
 
 .heroImgOverlay {
@@ -181,9 +187,3 @@ section:has(.colorBlock) {
     margin-top: 1rem;
   }
 }
-
-/* @media only screen and (orientation: landscape) and (min-height: 769px) {
-  .mainHeading span {
-    font-size: clamp(4rem, 4vw, 6rem);
-  }
-} */

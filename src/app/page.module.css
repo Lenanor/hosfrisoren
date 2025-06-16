@@ -8,3 +8,7 @@
   gap: 2rem;
   grid-template-columns: repeat(auto-fill, minmax(min(31rem, 100%), 1fr));
 }
+
+.cardList li {
+  background-color: var(--bg-4);
+}

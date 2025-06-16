@@ -1,7 +1,9 @@
 import SmartLink from "./ui/SmartLink";
 import Image from "next/image";
 
+import { LogoIcon } from "@/assets/Icons";
 import { mainNavContent } from "@/content/main-navigation";
+import { openHours } from "@/content/hours-content";
 import styles from "./Footer.module.css";
 
 function Footer() {
@@ -9,19 +11,12 @@ function Footer() {
     <footer className={styles.footer}>
       <div className={styles.footerContent}>
         <div className={styles.logoWrap}>
-          <Image
-            src="/logo_gray.svg"
-            alt="Hos Frisören logotyp"
-            width={220}
-            height={73}
-          />
+          <LogoIcon />
         </div>
         <div className={styles.grid}>
           <div>
             <h2>Öppettider</h2>
-            <p>mån: 10–18</p>
-            <p>tis&ndash;fre: 9&ndash;18</p>
-            <p>lör, sön: stängt</p>
+            {openHours}
             <p>(Öppettider kan variera)</p>
           </div>
           <div>

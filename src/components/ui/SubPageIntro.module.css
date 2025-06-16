@@ -1,0 +1,45 @@
+.mainHeading {
+  font-size: clamp(2rem, 11.5vw, 5.7rem);
+  width: 100%;
+  max-width: 85%;
+}
+
+@media screen and (min-width: 1025px) {
+  .mainHeading {
+    font-size: clamp(6rem, 6.5vw, 7rem);
+  }
+}
+
+.introText {
+  padding-left: 3rem;
+}
+
+.introText p:first-child {
+  font-size: calc(var(--document-font-size) + 2px);
+  font-weight: 600;
+  width: 90%;
+  margin-bottom: 2rem;
+}
+
+.introText p:first-child span {
+  display: block;
+}
+
+.introText a {
+  font-weight: 600;
+}
+
+.introText a:hover {
+  color: var(--color-hover);
+}
+
+@media screen and (min-width: 769px) {
+  .introText {
+    padding-left: 3rem;
+    max-width: 900px;
+  }
+
+  .introText p:first-child {
+    max-width: 550px;
+  }
+}

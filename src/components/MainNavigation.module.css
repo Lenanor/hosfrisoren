@@ -1,7 +1,3 @@
-.wrapper {
-  border: 1px solid blue;
-}
-
 @media screen and (max-width: 768px) {
   .nav.expanded {
     position: fixed;

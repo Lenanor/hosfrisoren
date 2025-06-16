@@ -2,14 +2,14 @@
 .fadeInSection {
   opacity: 1;
   transform: none;
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  will-change: opacity, transform;
+  transition: opacity 1s ease-out;
+  will-change: opacity;
 }
 
 /* Animation applies only when JS adds .isVisible */
 .fadeInSection:not(.isVisible) {
   opacity: 0;
-  transform: translateY(20px);
+  /* transform: translateY(20px); */
 }
 
 /* Accessibility: reduce motion for those who prefer it */
