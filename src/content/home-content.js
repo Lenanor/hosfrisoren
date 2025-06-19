@@ -15,18 +15,22 @@ export const mainHeading = (
 // -----------------------------
 
 export const blockContentOne = {
-  id: "product_section",
+  id: "section_intro",
   body: (
     <>
       <h2>Hur vill du ha ditt&nbsp;hår?</h2>
       <p>
-        Klippning, toppning, färg eller slingor? Vill du göra en uppsättning,
-        hårförlängning eller en permanent? Det fixar vi.
+        Dags för klippning, färg eller kanske slingor? Känner du för en
+        balayage, permanent eller hårförlängning? Det fixar vi.
       </p>
       <p>
-        Våra duktiga frisörer står redo att ta hand om dig och ditt hår. Slå dig
-        ner, koppla av, drick en kaffe så sköter vi resten. Boka tid via vår
-        online-bokning eller ring oss på
+        Våra erfarna frisörer tar hand om dig och ditt hår. Slå dig bara ner,
+        koppla av med en kaffe och känn dig trygg med att vi kan vårt hantverk.
+        Välkommen till Hos Frisören!{" "}
+      </p>
+
+      <p>
+        Boka tid via vår online-bokning eller ring oss på
         <a href="tel:+4624710038">
           {" "}
           <span>0247&#8209;100&nbsp;38</span>
@@ -38,7 +42,7 @@ export const blockContentOne = {
 };
 
 export const blockContentTwo = {
-  id: "product_section",
+  id: "section_products",
   body: (
     <>
       <h2>Produkter och prismatchning</h2>
@@ -64,25 +68,21 @@ export const blockContentTwo = {
 };
 
 export const blockContentThree = {
-  id: "pryl_section",
+  id: "section_inredning",
   body: (
     <>
       <h2>Surprise!</h2>
       <p>
-        Inredning. Pop-up i salongen. presenter/unna däj. På salongen finns även
-        en inredningshörna där vi säljer diverse föremål så som skålar, krukor,
-        lampor, ljusstakar m.m. Vi köper in inredningssaker vi gillar och hoppas
-        att du också tycker om dem!
+        På vår salong hittar du inte bara hårvård. Vi har också en liten
+        inredningshörna med noga utvalda detaljer för hemmet. Här kan du
+        botanisera bland prydnadsföremål, ljusstakar, lampor och andra
+        inredningsdetaljer som passar lika bra som presenter som till ditt eget
+        hem.
       </p>
       <p>
-        <strong>
-          OBS! Om du hittar någon av våra hårprodukter billigare online så
-          prismatchar vi det lägre priset.
-        </strong>
-      </p>
-      <p>
-        Stort tack till dig som handlar lokalt, du hjälper till att hålla ortens
-        företag levande!
+        Vi handplockar allt i liten skala, med omsorg och känsla. Det ska kännas
+        både personligt och inspirerande. Kanske hittar du just den där lilla
+        saken du inte visste att du saknade.
       </p>
     </>
   ),

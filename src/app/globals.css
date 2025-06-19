@@ -9,7 +9,7 @@
   --color-hover: #718816;
   --bg-1: rgba(240, 240, 232, 1);
   --bg-2: #f8f7f0;
-  --bg-3: var(--color-green);
+  --bg-3: #e3e8cb;
   --bg-4: rgb(247, 247, 235);
 
   --document-gutter: 1.8rem;
@@ -89,7 +89,7 @@ html {
 
 body {
   color: var(--color-black);
-  background: var(--bg-4);
+  background: var(--bg-1);
   font-family: var(--font-raleway);
   font-size: var(--document-font-size);
   font-weight: 400;

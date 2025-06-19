@@ -66,7 +66,7 @@ export default function Home() {
 
       <LogoCarousel />
 
-      <ColorBlock bg="bg-3">
+      <ColorBlock bg="bg-4">
         <TwoColImage id={blockContentThree.id} />
         <TwoColText>{blockContentThree.body}</TwoColText>
       </ColorBlock>

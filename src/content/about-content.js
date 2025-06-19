@@ -114,12 +114,12 @@ export const stylistsData = {
         <>
           <span>
             Jag är trainee inom frisöryrket och har varit verksam i 1,5 år. Just
-            nu förbereder jag mig inför mitt gesällprov som jag planerar att
+            nu förbereder jag mig inför mitt gesällprov, som jag planerar att
             göra i slutet av året.
           </span>
           <span>
             Varje dag hittar jag inspiration i både mina kollegor och de
-            fantastiska kunderna som sätter sig i min stol. Det är mötet med
+            fantastiska kunder som sätter sig i min stol. Det är mötet med
             människor och känslan av att få hjälpa någon känna sig fin som gör
             mitt jobb så roligt.
           </span>{" "}
@@ -127,13 +127,16 @@ export const stylistsData = {
             Klippningar är det jag tycker allra mest om att jobba med, oavsett
             om det handlar om korta frisyrer eller långa längder. Jag älskar
             förändringar, särskilt när vi tillsammans skapar en ny stil där
-            klippning och färg får samspela. Många kan uppleva problem som
-            friss, torrt hår och kluvna toppar, men ofta är lösningen enklare än
-            man tror. Mitt bästa tips är att satsa på återfuktande produkter. En
-            inpackning i veckan och en bra leave-in efter tvätt gör stor
-            skillnad. Och stylar du med värme? Glöm inte värmeskydd, Kevin
-            Murphy Everlasting.Colour Leave-In är en favorit hos mig just nu!
+            klippning och färg får samspela.
           </span>{" "}
+          <span>
+            Många kan uppleva problem som friss, torrt hår och kluvna toppar,
+            men ofta är lösningen enklare än man tror. Mitt bästa tips är att
+            satsa på återfuktande produkter. En inpackning i veckan och en bra
+            leave-in efter tvätt gör stor skillnad. Och stylar du med värme?
+            Glöm inte värmeskydd, Kevin Murphy Everlasting.Colour Leave-In är en
+            favorit hos mig just nu!
+          </span>
           <span>
             När jag inte står med sax och fön i handen hittar du mig hemma med
             min lilla familj i Gagnef. Jag är gärna kreativ även utanför

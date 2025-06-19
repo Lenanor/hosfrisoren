@@ -47,16 +47,9 @@
   }
 }
 
-/* @media screen and (min-width: 769px) {
-  .wrapper {
-    max-width: 360px;
-    width: 100%;
-  }
-} */
-
 @media screen and (min-width: 1400px) {
   .section {
-    margin: 9rem auto;
+    margin: 0 auto 9rem auto;
   }
 }
 

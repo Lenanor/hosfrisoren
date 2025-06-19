@@ -18,6 +18,12 @@
   border-radius: 6px;
 }
 
+@media screen and (min-width: 1025px) {
+  .colorBackground {
+    padding: 6rem;
+  }
+}
+
 .colorBackground h2 {
   font-size: 3rem;
 }
