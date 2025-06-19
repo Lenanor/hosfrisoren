@@ -2,18 +2,11 @@
   --list-item-padding: padding: 0.2rem 0;
 
   background: var(--color-black);
-  padding-top: 3rem;
+  padding-top: var(--section-vertical-padding);
   padding-bottom: 10rem;
-}
-
-.footerContent {
-  padding-top: 0;
-  padding-bottom: 0;
   padding-left: var(--document-gutter);
   padding-right: var(--document-gutter);
-
 }
-
 
 .footer a,
 .footer p,

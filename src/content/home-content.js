@@ -24,10 +24,14 @@ export const blockContentOne = {
         hårförlängning eller en permanent? Det fixar vi.
       </p>
       <p>
-        Våra duktiga frisörer står redo att ta hand om ditt hår. Slå dig ner,
-        koppla av, drick en kaffe så sköter vi resten. Boka tid via vår
-        online-bokning (läs mer här) eller ring oss på
-        <a href="tel:+4624710038"> 0247-100 38</a>.
+        Våra duktiga frisörer står redo att ta hand om dig och ditt hår. Slå dig
+        ner, koppla av, drick en kaffe så sköter vi resten. Boka tid via vår
+        online-bokning eller ring oss på
+        <a href="tel:+4624710038">
+          {" "}
+          <span>0247&#8209;100&nbsp;38</span>
+        </a>
+        .
       </p>
     </>
   ),
@@ -39,8 +43,8 @@ export const blockContentTwo = {
     <>
       <h2>Produkter och prismatchning</h2>
       <p>
-        Hos Frisören säljer bara hårprodukter av hög kvalitet som vi själva vill
-        använda. Så gott som alla är veganska, fria från sulfater, gluten,
+        Hos Frisören säljer hårprodukter med hög kvalitet som vi själva vill
+        använda. De flesta produkterna är veganska, fria från sulfater, gluten,
         parabener och har förpackningar av återvunnen plast. Fråga oss gärna om
         rådgivning, vi kan våra produkter och guidar dig gärna om vad som passar
         dig och din typ av hår.
@@ -94,22 +98,25 @@ export const cardsData = {
       id: "scissors",
       icon: "scissors",
       title: "Vi är licencierade frisörer",
-      body: "Hos Frisören är medlem i frisörföreningen och personalen har gesällbrev eller mästarbrev. Det garanterar att vi har...",
+      body: "Salongen är medlem i Frisörföretagarna och frisörerna som jobbar här är utbildade, har frisörlicens och har avlagt godkänt gesällprov.....",
       cta: "/about",
+      ctaText: "Läs mer",
     },
     {
       id: "clock",
       icon: "clock",
       title: "Öppettider",
-      body: "Hos Frisören är medlem i frisörföreningen och personalen har gesällbrev eller mästarbrev. Det garanterar att vi har...",
-      cta: "/about",
+      body: "I regel gäller: måndag: 10 - 18, tisdag - fredag: 9 - 18, helg: stängt. Håll gärna koll på Hos Frisörens instagram-konto för avvikelser. Vi har öppet hela.....",
+      cta: "/open",
+      ctaText: "Läs mer",
     },
     {
       id: "calender",
       icon: "calender",
       title: "Tidsbokning",
-      body: "Hos Frisören är medlem i frisörföreningen och personalen har gesällbrev eller mästarbrev. Det garanterar att vi har...",
+      body: "Om du får förhinder, tänk på att avboka senast 24 timmar innan så vi har chans att ge tiden till någon annan. Vi är kontantfria och tar endast betalning via kontokort och Swish.",
       cta: "https://bokning.voady.se/hosfrisoren/hosfrisoren/",
+      ctaText: "Boka online",
     },
   ],
 };

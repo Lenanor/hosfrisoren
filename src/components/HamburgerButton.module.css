@@ -5,13 +5,11 @@
   margin-bottom: 0;
 }
 
-.button {
-  outline: 2px dashed red;
-}
-
 .button[aria-expanded="true"] {
   margin-left: auto;
   display: block;
+  z-index: 2;
+  position: relative;
 }
 
 @media screen and (min-width: 769px) {
@@ -49,11 +47,9 @@
 .button[aria-expanded="true"] .symbol:before {
   transform: rotate(45deg);
   top: 1.4rem;
-  background: var(--color-white);
 }
 
 .button[aria-expanded="true"] .symbol:after {
   transform: rotate(-45deg);
   bottom: 1.4rem;
-  background: var(--color-white);
 }

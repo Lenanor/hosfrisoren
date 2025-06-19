@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 import MainNavigation from "./MainNavigation";
@@ -11,8 +10,6 @@ import styles from "./Header.module.css";
 
 function Header() {
   const path = usePathname();
-
-  console.log(path);
 
   return (
     <header className={`${styles.header}`}>

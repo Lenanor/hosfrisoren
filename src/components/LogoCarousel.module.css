@@ -2,10 +2,16 @@
   overflow: hidden;
   padding: 6rem 0;
   white-space: nowrap;
-  /* max-width: 980px; */
   margin: 0 auto;
   background-color: var(--color-body);
   position: relative;
+  width: calc(3 * 785px); /* three times the logo group width*/
+}
+
+@media screen and (min-width: 769px) {
+  .logos {
+    width: calc(3 * 900px); /* three times the logo group width*/
+  }
 }
 
 .logos::before,
@@ -50,7 +56,7 @@
 }
 
 .logosSlide {
-  animation: slide 30s linear infinite;
+  animation: slide 25s linear infinite;
   display: inline-block;
 }
 

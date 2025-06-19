@@ -6,10 +6,28 @@ export const introText = (
       öppnade Hos Frisören i egen regi.
     </p>
     <p>
-      Hos Frisören är medlem i Frisörförbundet och vi som jobbar här är
-      utbildade och licencierade frisörer eller trainees under utbildning.
-      Inspiration och nya tekniker är viktigt, därför går vi regelbunder kurser
-      för att hålla oss uppdaterade.
+      Som kund ska du självklart kunna känna dig trygg när du klipper eller
+      färgar ditt hår. Hos Frisören är medlem i{" "}
+      <a href="https://frisor.se/frisorforetagarna/om-frisorforetagarna">
+        Frisörföretagarna
+      </a>{" "}
+      och vi som jobbar här är utbildade, har{" "}
+      <a href="https://frisor.se/frisorlicens/varfor-frisorlicens">
+        frisörlicens
+      </a>{" "}
+      och har avlagt som minimum ett av branschens yrkesprover, de så kallade{" "}
+      <a href="https://hantverksrad.se/gesallbrev-och-mastarbrev/">
+        gesällbrevet och mästarbrevet
+      </a>
+      . Det garanterar att vi har den yrkesskicklighet som förväntas och att Hos
+      Frisören är ett seriöst företag med F-skattsedel och godkänt
+      kassaregister.
+    </p>
+    <p>
+      Våra kunder är det finaste vi har, utan er – ingen salong. Hos oss är du
+      och ditt hår i fokus. Du är varmt välkommen till oss för en stund av
+      avkoppling, en kopp kaffe och ett professionellt omhändertagande av ditt
+      hår.
     </p>
   </>
 );
@@ -62,10 +80,10 @@ export const stylistsData = {
       body: (
         <>
           <span>
-            Jag gillar att mitt jobb är så varierat, ena dagen en enkel
-            toppning, nästa dag en stor färgförändring. Att träffa nya människor
-            är också en stor del av varför jag trivs med yrket. Alla har sin
-            egen stil och sina egna önskemål om hur de vill ha sitt hår, och jag
+            Mitt jobb är så varierat och det gillar jag, ena dagen en toppning,
+            nästa dag en stor färgförändring. Att träffa nya människor är också
+            en stor del av varför jag trivs så bra med yrket. Alla har sin egen
+            stil och sina egna önskemål om hur de vill ha sitt hår, och jag
             gillar att hitta lösningar som passar just den personen. Färgningar
             tycker jag är särskilt kul, det finns så många nyanser och
             möjligheter.
@@ -95,32 +113,31 @@ export const stylistsData = {
       body: (
         <>
           <span>
-            Jag är frisör-trainee och har jobbat aktivt i 1,5 år. Planen är att
-            göra mitt gesällprov i slutet av året. Mycket av min inspiration
-            hämtar jag från mina fantastiska kollegor och alla kunder som slår
-            sig ner i min stol. Att träffa kunder och få göra dem fina ger mig
-            energi och glädje varje dag.
+            Jag är trainee inom frisöryrket och har varit verksam i 1,5 år. Just
+            nu förbereder jag mig inför mitt gesällprov som jag planerar att
+            göra i slutet av året.
           </span>
-
           <span>
-            Mitt favoritområde är klippning, oavsett om det gäller korta eller
-            långa frisyrer. Extra roligt är det med makeovers där en snygg
-            klippning kombineras med en riktigt fin färg.
-          </span>
-
+            Varje dag hittar jag inspiration i både mina kollegor och de
+            fantastiska kunderna som sätter sig i min stol. Det är mötet med
+            människor och känslan av att få hjälpa någon känna sig fin som gör
+            mitt jobb så roligt.
+          </span>{" "}
           <span>
-            Många vanliga problem som friss, glanslöst hår eller kluvna toppar
-            beror ofta på torrt hår. Mitt bästa råd, oavsett hårtyp, är att
-            satsa på återfuktande produkter. En riktigt bra inpackning en gång i
-            veckan och en leave-in-produkt efter duschen gör stor skillnad.
-            Fönar eller stylar du håret är värmeskydd ett måste. Jag kan varmt
-            rekommendera Kevin Murphy Everlasting.Colour Leave-In!
-          </span>
-
+            Klippningar är det jag tycker allra mest om att jobba med, oavsett
+            om det handlar om korta frisyrer eller långa längder. Jag älskar
+            förändringar, särskilt när vi tillsammans skapar en ny stil där
+            klippning och färg får samspela. Många kan uppleva problem som
+            friss, torrt hår och kluvna toppar, men ofta är lösningen enklare än
+            man tror. Mitt bästa tips är att satsa på återfuktande produkter. En
+            inpackning i veckan och en bra leave-in efter tvätt gör stor
+            skillnad. Och stylar du med värme? Glöm inte värmeskydd, Kevin
+            Murphy Everlasting.Colour Leave-In är en favorit hos mig just nu!
+          </span>{" "}
           <span>
-            När jag inte jobbar spenderar jag tid med min lilla familj. Jag är
-            också väldigt pysslig av mig och tycker om att vara ute i trädgården
-            hemma i Gagnef på fritiden.
+            När jag inte står med sax och fön i handen hittar du mig hemma med
+            min lilla familj i Gagnef. Jag är gärna kreativ även utanför
+            salongen och pysslar, planterar och fixar i trädgården.
           </span>
         </>
       ),
@@ -140,7 +157,7 @@ export const careerData = [
       <>
         <p>
           Vi är alltid intresserade av att bli fler kreativa, ambitiösa och
-          serviceinriktade frisörer i vårt gäng. Hos oss finns stora möjligheter
+          serviceinriktade frisörer i vårt team. Hos oss finns stora möjligheter
           att utvecklas som frisör, vara med och påverka och en gemenskap där vi
           inspirerar och lyfter varandra. Vi är en flexibel arbetsplats,
           balansen mellan jobb och fritid måste fungera för att vi ska må bra

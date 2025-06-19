@@ -6,7 +6,7 @@
   --color-green: #dee6ba;
   --color-green-dark: #cdd59b;
   --color-focus: #f4860b;
-  --color-hover: #af7409;
+  --color-hover: #718816;
   --bg-1: rgba(240, 240, 232, 1);
   --bg-2: #f8f7f0;
   --bg-3: var(--color-green);
@@ -195,7 +195,7 @@ ul {
   z-index: 1;
   padding: 1.5rem 2rem;
   background-color: var(--color-focus);
-  color: var(--color-white);
+  color: var(--color-black);
   font-size: 1.4rem;
   font-weight: 700;
   text-align: center;

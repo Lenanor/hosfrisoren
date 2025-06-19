@@ -53,6 +53,7 @@ export default function Home() {
               title={card.title}
               body={card.body}
               cta={card.cta}
+              ctaText={card.ctaText}
             />
           ))}
         </ul>

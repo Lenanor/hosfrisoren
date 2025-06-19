@@ -8,6 +8,10 @@
   width: 85%;
 }
 
+.textParent a[href^="tel:"] {
+  font-weight: 600;
+}
+
 @media screen and (min-width: 481px) {
   .textParent {
     margin: auto 0;

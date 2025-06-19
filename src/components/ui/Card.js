@@ -7,7 +7,7 @@ import { Calender, Clock, Scissors } from "@/assets/Icons";
 
 import styles from "./Card.module.css";
 
-function Card({ title, body, icon = null, cta = null }) {
+function Card({ title, body, icon = null, cta = null, ctaText = null }) {
   function getIcon(icon) {
     if (icon === "clock") {
       return <Clock className={styles.listIcon} />;
@@ -33,20 +33,20 @@ function Card({ title, body, icon = null, cta = null }) {
     );
 
   return (
-    <FadeInOnScroll>
-      <li className={styles.card}>
+    <li className={styles.card}>
+      <FadeInOnScroll>
         {iconType}
         <div className={styles.content}>
           {heading}
           <p className={styles.meta}>{body}</p>
-          {cta && (
+          {cta && ctaText && (
             <p className={styles.readMore} aria-hidden="true">
-              Läs mer
+              {ctaText}
             </p>
           )}
         </div>
-      </li>
-    </FadeInOnScroll>
+      </FadeInOnScroll>
+    </li>
   );
 }
 

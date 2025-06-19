@@ -2,21 +2,21 @@
   .nav.expanded {
     position: fixed;
     inset: 0;
-    background-color: var(--color-gray);
+    background-color: var(--color-green-dark);
     z-index: 1;
     padding: var(--header-padding-top) var(--document-gutter);
   }
 
   .list a {
     font-size: 4rem;
-    color: var(--color-white);
+    color: var(--color-black);
     white-space: nowrap;
-    font-weight: 400;
+    font-weight: 600;
     transition: color 0.3s ease;
   }
 
   .list a:hover {
-    color: var(--color-gray-light);
+    color: var(--color-hover);
   }
 
   .nav .list {
