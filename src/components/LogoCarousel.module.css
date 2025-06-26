@@ -5,12 +5,13 @@
   margin: 0 auto;
   background-color: var(--bg-3);
   position: relative;
-  width: calc(3 * 785px); /* three times the logo group width*/
+  width: 100%;
+  max-width: calc(3 * 785px); /* three times the logo group width*/
 }
 
 @media screen and (min-width: 769px) {
   .logos {
-    width: calc(3 * 900px); /* three times the logo group width*/
+    max-width: calc(3 * 900px); /* three times the logo group width*/
   }
 }
 

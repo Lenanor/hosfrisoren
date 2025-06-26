@@ -18,6 +18,10 @@ export const metadata = {
   apple: [{ url: "/apple-touch-icon.png" }],
 };
 
+export const viewport = {
+  themeColor: "black",
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="sv" className={`${montserrat.variable} ${raleway.variable}`}>
