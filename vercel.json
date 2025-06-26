@@ -11,6 +11,11 @@
       "permanent": true
     },
     {
+      "source": "/fragor-och-svar",
+      "destination": "/",
+      "permanent": true
+    },
+    {
       "source": "/klippning-dalarna",
       "destination": "/",
       "permanent": true
@@ -27,11 +32,6 @@
     },
     {
       "source": "/harforlangning-dalarna",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/fragor-och-svar",
       "destination": "/",
       "permanent": true
     }

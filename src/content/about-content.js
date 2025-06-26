@@ -1,7 +1,7 @@
 export const introText = (
   <>
     <p>
-      I lokalen på Torget 6 har frisörer varit verksamma sedan 70-talet, så här
+      I lokalen på Torget 6 har frisörer varit verksamma sedan 70-talet, här
       sitter verkligen hantverket i väggarna. Lisa tog över som ägare 2004 då
       hon startade Hos Frisören i egen regi.
     </p>
@@ -89,12 +89,13 @@ export const stylistsData = {
         <>
           <span>
             Mitt jobb är så varierat och det gillar jag, ena dagen en toppning,
-            nästa dag en stor färgförändring. Att träffa nya människor är också
-            en stor del av varför jag trivs så bra med yrket. Alla har sin egen
-            stil och sina egna önskemål om hur de vill ha sitt hår, och jag
-            gillar att hitta lösningar som passar just den personen. Färgningar
-            tycker jag är särskilt kul, det finns så många nyanser och
-            möjligheter.
+            nästa dag en stor färgförändring. Efter 14 år i yrket känner jag
+            fortfarande samma engagemang för mitt arbete som frisör. Att få
+            träffa nya människor är också en stor del av varför jag trivs så bra
+            med mitt jobb. Alla har sin egen stil och sina egna önskemål om hur
+            de vill ha sitt hår, och jag gillar att hitta lösningar som passar
+            just den personen. Färgningar tycker jag är särskilt kul, det finns
+            så många nyanser och möjligheter.
           </span>
           <span>
             Mitt bästa tips för dig som vill börja ta hand om ditt hår? Satsa på

@@ -47,11 +47,12 @@ export const blockContentTwo = {
     <>
       <h2>Produkter och prismatchning</h2>
       <p>
-        Hos Frisören säljer hårprodukter med hög kvalitet som vi själva vill
-        använda. De flesta produkterna är veganska, fria från sulfater, gluten,
-        parabener och har förpackningar av återvunnen plast. Fråga oss gärna om
-        rådgivning, vi kan våra produkter och guidar dig gärna om vad som passar
-        dig och din typ av hår.
+        Hos Frisören är återförsäljare av hårprodukter av toppkvalitet,
+        produkter som vi själva gärna använder och rekommenderar. De flesta
+        märkena är veganska, fria från sulfater, gluten, parabener och har
+        förpackningar av återvunnen plast. Fråga oss gärna om rådgivning, vi kan
+        våra produkter och guidar dig gärna om vad som passar dig och din typ av
+        hår.
       </p>
       <p>
         <strong>

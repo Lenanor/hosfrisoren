@@ -6,6 +6,12 @@ import { introText } from "@/content/open-content";
 import styles from "./page.module.css";
 import FadeInOnScroll from "@/components/ui/FadeInOnScroll";
 
+export const metadata = {
+  title: "Öppettider | Hos Frisören",
+  description:
+    "Se aktuella öppettider för Hos Frisören i Leksand. Tiderna kan variera, följ oss på Instagram för uppdateringar. Du hittar oss på Torget 6.",
+};
+
 const intro = (
   <>
     {openHours}

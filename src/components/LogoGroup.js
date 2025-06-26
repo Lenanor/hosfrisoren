@@ -67,7 +67,7 @@ import epres from "@/assets/logos/epres_160x49.png";
 const logos = [
   {
     src: kevinMurphy,
-    alt: "Logotyp Kevin Murphy",
+    alt: "Logotyp för hårprodukten Kevin Murphy",
     className: styles.kevin,
     width: 300,
     height: 37,
@@ -75,7 +75,7 @@ const logos = [
   },
   {
     src: eleven,
-    alt: "Logotyp Eleven",
+    alt: "Logotyp för hårprodukten Eleven",
     className: styles.eleven,
     width: 200,
     height: 57,
@@ -83,7 +83,7 @@ const logos = [
   },
   {
     src: lp,
-    alt: "Logotyp Living Proof",
+    alt: "Logotyp för hårprodukten Living Proof",
     className: styles.lp,
     width: 320,
     height: 59,
@@ -91,7 +91,7 @@ const logos = [
   },
   {
     src: k18,
-    alt: "Logotyp K18",
+    alt: "Logotyp för hårprodukten K18",
     className: styles.k18,
     width: 120,
     height: 74,
@@ -99,7 +99,7 @@ const logos = [
   },
   {
     src: epres,
-    alt: "Logotyp Epres",
+    alt: "Logotyp för hårprodukten Epres",
     className: styles.epres,
     width: 160,
     height: 49,

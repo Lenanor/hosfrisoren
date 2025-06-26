@@ -2,9 +2,7 @@ export default function robots() {
   return {
     rules: {
       userAgent: "*",
-      allow: "/",
-      disallow: "/private/",
+      disallow: "/",
     },
-    sitemap: "https://hosfrisoren.se/sitemap.js",
   };
 }

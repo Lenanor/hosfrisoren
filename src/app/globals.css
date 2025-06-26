@@ -63,7 +63,7 @@
     --section-vertical-padding: 12rem;
 
     --heading-1: 6rem;
-    --heading-2: 5.2rem;
+    --heading-2: clamp(4rem, 3.9vw, 5.2rem);
     --heading-3: 3rem;
     --heading-4: 2rem;
 
@@ -89,7 +89,7 @@ html {
 
 body {
   color: var(--color-black);
-  background-color: var(--bg-4);
+  background-color: var(--bg-1);
   font-family: var(--font-raleway);
   font-size: var(--document-font-size);
   font-weight: 400;
