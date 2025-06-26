@@ -108,7 +108,6 @@ export const stylistsData = {
           </span>
         </>
       ),
-      cta: "/about",
     },
     {
       id: "louisa",
@@ -152,7 +151,6 @@ export const stylistsData = {
           </span>
         </>
       ),
-      cta: "https://bokning.voady.se/hosfrisoren/hosfrisoren/",
     },
   ],
 };

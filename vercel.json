@@ -1,18 +1,13 @@
 {
   "redirects": [
     {
-      "source": "/om-oss",
-      "destination": "/about",
-      "permanent": true
-    },
-    {
       "source": "/aktuellt",
       "destination": "/",
       "permanent": true
     },
     {
       "source": "/kontakt",
-      "destination": "/open",
+      "destination": "/oppettider",
       "permanent": true
     },
     {

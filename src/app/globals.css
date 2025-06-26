@@ -7,7 +7,7 @@
   --color-green-dark: #cdd59b;
   --color-focus: #f4860b;
   --color-hover: #718816;
-  --bg-1: rgba(240, 240, 232, 1);
+  --bg-1: rgb(241 241 222);
   --bg-2: #f8f7f0;
   --bg-3: #e3e8cb;
   --bg-4: rgb(247, 247, 235);
@@ -89,7 +89,7 @@ html {
 
 body {
   color: var(--color-black);
-  background: var(--bg-1);
+  background-color: var(--bg-4);
   font-family: var(--font-raleway);
   font-size: var(--document-font-size);
   font-weight: 400;

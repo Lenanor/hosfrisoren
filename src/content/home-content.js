@@ -99,7 +99,7 @@ export const cardsData = {
       icon: "scissors",
       title: "Vi är licencierade frisörer",
       body: "Salongen är medlem i Frisörföretagarna och frisörerna som jobbar här är utbildade, har frisörlicens och har avlagt godkänt gesällprov.....",
-      cta: "/about",
+      cta: "/om-oss",
       ctaText: "Läs mer",
     },
     {
@@ -107,7 +107,7 @@ export const cardsData = {
       icon: "clock",
       title: "Öppettider",
       body: "I regel gäller: måndag: 10 - 18, tisdag - fredag: 9 - 18, helg: stängt. Håll gärna koll på Hos Frisörens instagram-konto för avvikelser. Vi har öppet hela.....",
-      cta: "/open",
+      cta: "/oppettider",
       ctaText: "Läs mer",
     },
     {

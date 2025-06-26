@@ -1,11 +1,11 @@
 export const mainNavContent = [
   {
     name: "Om oss",
-    href: "/about",
+    href: "/om-oss",
   },
   {
     name: "Öppettider",
-    href: "/open",
+    href: "/oppettider",
   },
   {
     name: "Boka",
@@ -20,11 +20,11 @@ export const mobileNavContent = [
   },
   {
     name: "Om oss",
-    href: "/about",
+    href: "/om-oss",
   },
   {
     name: "Öppettider",
-    href: "/open",
+    href: "/oppettider",
   },
   {
     name: "Boka",

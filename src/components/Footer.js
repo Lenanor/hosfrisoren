@@ -21,7 +21,7 @@ function Footer() {
                   </li>
                 ))}
                 <li className={styles.linkList}>
-                  <SmartLink href="/about#career">Jobba hos oss</SmartLink>
+                  <SmartLink href="/om-oss#career">Jobba hos oss</SmartLink>
                 </li>
               </ul>
             </nav>
