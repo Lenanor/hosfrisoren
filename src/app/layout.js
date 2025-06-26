@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { montserrat, raleway } from "../fonts/fonts";
+import { montserrat, raleway } from "../fonts/fonts.js";
 import "./globals.css";
 
 import Header from "@/components/Header";
