@@ -34,7 +34,7 @@ function Open() {
             <span role="img" aria-label="sun">
               ☀️
             </span>{" "}
-            LISA: v.28 och v.29
+            LISA: v.28, v.29 och v.35
           </p>
           <p className={styles.bold}>
             {" "}

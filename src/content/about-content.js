@@ -1,13 +1,13 @@
 export const introText = (
   <>
     <p>
-      I lokalen på Torget 6 har frisörer varit verksamma sedan ...., här sitter
-      verkligen hantverket i väggarna. Lisa tog över som ägare 19xx då hon
-      öppnade Hos Frisören i egen regi.
+      I lokalen på Torget 6 har frisörer varit verksamma sedan 70-talet, så här
+      sitter verkligen hantverket i väggarna. Lisa tog över som ägare 2004 då
+      hon startade Hos Frisören i egen regi.
     </p>
     <p>
-      Som kund ska du självklart kunna känna dig trygg när du klipper eller
-      färgar ditt hår. Hos Frisören är medlem i{" "}
+      Som kund hos oss ska du kunna känna dig trygg när du klipper eller färgar
+      ditt hår. Hos Frisören är medlem i{" "}
       <a href="https://frisor.se/frisorforetagarna/om-frisorforetagarna">
         Frisörföretagarna
       </a>{" "}
@@ -48,6 +48,14 @@ export const stylistsData = {
       ),
       body: (
         <>
+          <span>
+            Sedan jag tog mitt gesällbrev som 19-åring har jag drivit eget inom
+            frisöryrket. Jag började med att hyra stol, blev senare delägare och
+            sedan 2004 driver jag Hos Frisören som ensam ägare. Salongen
+            startades när jag tog över de lokaler vi är i idag. Tio år senare,
+            2014, tog jag mitt mästarbrev som en personlig och yrkesmässig
+            utmaning.
+          </span>
           <span>
             Att tänka ut och klippa fram en snygg form och att lyfta håret med
             färg är det som jag gillar bäst med mitt arbete. Ingen människa är
@@ -169,7 +177,8 @@ export const careerData = [
         <p>
           Det är viktigt att du har godkänd frisörutbildning och gesällbrev. För
           att trivas hos oss bör du även vara social, tycka om att ta ansvar och
-          ha ett driv att utvecklas som frisör.
+          att ta egna initiativ samt ha ett starkt driv att utvecklas som
+          frisör.
         </p>
         <p>
           Låter det intressant? I så fall är vi nyfikna på att höra från dig!
@@ -184,14 +193,16 @@ export const careerData = [
     body: (
       <>
         <p>
-          Det är viktigt för frisörbranchen med återväxt av skickliga frisörer
-          och vi ter gärna emot trainees när det finns. Du blir en i gänget och
-          får möjlighet att öva på allt du behöver för att göra ditt gesällprov,
-          under handledning av erfarna kollegor.
+          Genom åren har Hos Frisören lotsat många elever till färdiga frisörer.
+          Det är viktigt för frisörbranschen med återväxt av nya skickliga
+          kollegor, därför tar vi tar gärna emot trainees när det finns
+          möjlighet.
         </p>
         <p>
-          För att trivas hos oss bör du vara social, tycka om att ta ansvar och
-          ha ett driv att utvecklas som frisör.
+          Du blir en i gänget och får, under handledning av erfarna kollegor,
+          öva på allt du behöver för att kunna klara ditt gesällprov. För att
+          trivas hos oss bör du vara social, tycka om att ta ansvar och att ta
+          egna initiativ samt ha ett starkt driv att utvecklas till frisör.
         </p>
         <p>
           Låter det intressant? I så fall är vi nyfikna på att höra från dig!

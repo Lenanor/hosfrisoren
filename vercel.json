@@ -1,0 +1,44 @@
+{
+  "redirects": [
+    {
+      "source": "/om-oss",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/aktuellt",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/kontakt",
+      "destination": "/open",
+      "permanent": true
+    },
+    {
+      "source": "/klippning-dalarna",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/fargning-dalarna",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/uppsattning-dalarna",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/harforlangning-dalarna",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/fragor-och-svar",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
+}
