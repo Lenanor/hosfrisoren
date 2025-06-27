@@ -7,7 +7,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Hos Frisören | Frisörsalong i Leksand ",
+  title: "Hos Frisören | Leksand ",
   description:
     "Licensierade frisörer med passion för färg och form. Återförsäljare av Kevin Murphy, Living Proof, K18, Eleven och Epres.",
   authors: [{ name: "Hos Frisören", url: "https://hosfrisoren.se" }],
@@ -16,6 +16,9 @@ export const metadata = {
   publisher: "Hos Frisören",
   icon: [{ url: "/favicon.ico" }, { url: "/icon.png", type: "image/png" }],
   apple: [{ url: "/apple-touch-icon.png" }],
+  alternates: {
+    canonical: "https://www.hosfrisoren.se",
+  },
 };
 
 export const viewport = {

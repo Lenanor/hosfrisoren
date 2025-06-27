@@ -10,6 +10,9 @@ export const metadata = {
   title: "Om oss | Hos Frisören",
   description:
     "Hos Frisören är en trygg frisörsalong i Leksand med utbildade frisörer med licens, gesäll- och mästarbrev. Vi är medlemmar i Frisörföretagarna och driver ett seriöst företag med yrkesstolthet.",
+  alternates: {
+    canonical: "https://www.hosfrisoren.se/om-oss",
+  },
 };
 
 function About() {
