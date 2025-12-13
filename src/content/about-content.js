@@ -122,8 +122,7 @@ export const stylistsData = {
         <>
           <span>
             Jag är trainee inom frisöryrket och har varit verksam i 1,5 år. Just
-            nu förbereder jag mig inför mitt gesällprov, som jag planerar att
-            göra i slutet av året.
+            nu förbereder jag mig inför mitt gesällprov.
           </span>
           <span>
             Varje dag hittar jag inspiration i både mina kollegor och de
@@ -149,6 +148,24 @@ export const stylistsData = {
             När jag inte står med sax och fön i handen hittar du mig hemma med
             min lilla familj i Gagnef. Jag är gärna kreativ även utanför
             salongen och pysslar, planterar och fixar i trädgården.
+          </span>
+        </>
+      ),
+    },
+    {
+      id: "selma",
+      icon: "scissors",
+      title: (
+        <>
+          Selma <span>Elev</span>
+        </>
+      ),
+      body: (
+        <>
+          <span>SELMA är elev hos oss, mer om henne kommer inom kort.</span>
+          <span>
+            Selma utför behandlingar med 50% rabatt. Du kan boka tid hos henne
+            genom att ringa salongen (ej via den digitala bokningen).
           </span>
         </>
       ),

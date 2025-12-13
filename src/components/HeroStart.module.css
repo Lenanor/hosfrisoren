@@ -127,7 +127,7 @@ section:has(.colorBlock) {
 .heroImgContainer {
   width: 100%;
   background-color: var(--bg-4);
-  padding-bottom: var(--section-vertical-padding);
+  /* padding-bottom: var(--section-vertical-padding); */
 }
 
 .heroImgWidth {

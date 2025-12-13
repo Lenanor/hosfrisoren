@@ -41,6 +41,29 @@ export const blockContentOne = {
   ),
 };
 
+export const blockContentCurrent = {
+  id: "section_current",
+  body: (
+    <>
+      <h2>Aktuellt</h2>
+      <ul className="current-section-list">
+        <li>
+          30% på alla produkter från Living proof (så långt lagret räcker).
+        </li>
+        <li>20% på alla inredningsprodukter (t.o.m den 9/1).</li>
+        <li>
+          Välkommen Selma - vår nya frisörelev! Hon gör behandlingar till halva
+          ordinarie pris och kan bokas via telefon (ej via digital bokning).
+        </li>
+        <li>
+          Nu kan du betala hos oss med Klarna när du handlar över 1.650kr.
+        </li>
+        <li>Vecka 3 (12&ndash;18/1) håller salongen stängt för renovering.</li>
+      </ul>
+    </>
+  ),
+};
+
 export const blockContentTwo = {
   id: "section_products",
   body: (
@@ -61,8 +84,8 @@ export const blockContentTwo = {
         </strong>
       </p>
       <p>
-        Vi vill passa på att tacka till dig som handlar lokalt, du hjälper till
-        att hålla Leksands företag levande! 🖤
+        Vi vill passa på att rikta ett stort tack dig som handlar lokalt. Du
+        hjälper till att hålla Leksands företag levande! 🖤
       </p>
     </>
   ),
@@ -84,6 +107,11 @@ export const blockContentThree = {
         Vi handplockar allt i liten skala, med omsorg och känsla. Det ska kännas
         både personligt och inspirerande. Kanske hittar du just den där lilla
         saken du inte visste att du saknade.
+      </p>
+      <p>
+        <strong>
+          Fram till v.3 har vi 20% rabatt på ALLA INREDNINGSPRODUKTER.
+        </strong>
       </p>
     </>
   ),

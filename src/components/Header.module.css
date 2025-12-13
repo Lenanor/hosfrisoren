@@ -2,6 +2,7 @@
   padding: var(--header-padding-top) var(--document-gutter);
   color: var(--color-black);
   background-color: var(--color-white);
+  padding-top: env(safe-area-inset-top);
 }
 
 @media screen and (min-width: 481px) {

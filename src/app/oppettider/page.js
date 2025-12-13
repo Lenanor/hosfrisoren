@@ -31,26 +31,45 @@ function Open() {
     >
       <FadeInOnScroll>
         <div className={styles.colorBackground}>
-          <h2>Våra semesterveckor 2025:</h2>
-          <p className={styles.bold}>
-            <span role="img" aria-label="sun">
-              ☀️
-            </span>{" "}
-            NINA: v.26 och v.27
+          <h2>Öppettider jul och januari:</h2>
+          <p className={styles.bold}> DECEMBER</p>
+          <p>
+            <span className={styles.dates}>22/12</span> 9&ndash;18
           </p>
-          <p className={styles.bold}>
-            {" "}
-            <span role="img" aria-label="sun">
-              ☀️
-            </span>{" "}
-            LISA: v.28, v.29 och v.35
+          <p>
+            <span className={styles.dates}>23/12</span> 8.15&ndash;17
           </p>
-          <p className={styles.bold}>
-            {" "}
-            <span role="img" aria-label="sun">
-              ☀️
-            </span>{" "}
-            LOUISA: v.30, v.31 och v.34
+          <p>
+            <span className={styles.dates}>24/12</span> JULAFTON STÄNGT
+          </p>
+          <p>
+            <span className={styles.dates}>29/12</span> 9&ndash;18
+          </p>
+          <p>
+            <span className={styles.dates}>30/12</span> 8.15&ndash;17
+          </p>
+          <p className={styles.bold}>JANUARI</p>
+          <p>
+            <span className={styles.dates}>2/1</span> 9&ndash;18
+          </p>
+          <p>
+            <span className={styles.dates}>5/1</span> 9&ndash;16
+          </p>
+          <p>
+            <span className={styles.dates}>6/1</span> TRETTONDAGEN STÄNGT
+          </p>
+          <p>
+            <span className={styles.dates}>7/1</span> 9&ndash;18
+          </p>
+          <p>
+            <span className={styles.dates}>8/1</span> 9&ndash;18
+          </p>
+          <p>
+            <span className={styles.dates}>9/1</span> 9&ndash;18
+          </p>
+          <p>
+            <span className={styles.dates}>12&ndash;16/1</span> STÄNGT FÖR
+            RENOVERING
           </p>
         </div>
       </FadeInOnScroll>
