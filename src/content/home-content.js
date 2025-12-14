@@ -52,11 +52,11 @@ export const blockContentCurrent = {
         </li>
         <li>20% på alla inredningsprodukter (t.o.m den 9/1).</li>
         <li>
-          Välkommen Selma - vår nya frisörelev! Hon gör behandlingar till halva
-          ordinarie pris och kan bokas via telefon (ej via digital bokning).
+          Välkommen Selma - vår nya frisörelev! Hon gör behandlingar för 50% av
+          ordinarie priser och kan bokas via telefon (ej via onlinebokningen).
         </li>
         <li>
-          Nu kan du betala hos oss med Klarna när du handlar över 1.650kr.
+          Nu kan du betala via Klarna hos oss när du handlar över 1.650kr.
         </li>
         <li>Vecka 3 (12&ndash;18/1) håller salongen stängt för renovering.</li>
       </ul>
@@ -70,9 +70,9 @@ export const blockContentTwo = {
     <>
       <h2>Produkter och prismatchning</h2>
       <p>
-        Hos Frisören är återförsäljare av hårprodukter av toppkvalitet,
-        produkter som vi själva gärna använder och rekommenderar. De flesta
-        märkena är veganska, fria från sulfater, gluten, parabener och har
+        Hos Frisören är återförsäljare av premiumhårprodukter: Kevin Murphy,
+        K18, Epres och Eleven, märken vi själva använder och rekommenderar. De
+        flesta är veganska, fria från sulfater, gluten, parabener och har
         förpackningar av återvunnen plast. Fråga oss gärna om rådgivning, vi kan
         våra produkter och guidar dig gärna om vad som passar dig och din typ av
         hår.
@@ -80,7 +80,7 @@ export const blockContentTwo = {
       <p>
         <strong>
           OBS! Vi prismatchar våra hårprodukter. Hittar du någon av dem
-          billigare på webben så matchar vi det lägre priset.
+          billigare online så matchar vi det lägre priset.
         </strong>
       </p>
       <p>

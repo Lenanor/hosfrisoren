@@ -1,8 +1,14 @@
 .header {
-  padding: var(--header-padding-top) var(--document-gutter);
   color: var(--color-black);
   background-color: var(--color-white);
-  padding-top: env(safe-area-inset-top);
+  padding-top: clamp(
+    var(--header-padding-top),
+    calc(var(--header-padding-top) + env(safe-area-inset-top)),
+    35px
+  );
+  padding-left: var(--document-gutter);
+  padding-right: var(--document-gutter);
+  padding-bottom: var(--header-padding-top);
 }
 
 @media screen and (min-width: 481px) {
