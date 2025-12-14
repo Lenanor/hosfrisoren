@@ -7,12 +7,13 @@ import { introText, stylistsData, careerData } from "@/content/about-content";
 import SubPageIntro from "@/components/ui/SubPageIntro";
 
 export const metadata = {
-  title: "Om oss | Hos Frisören",
+  title: "Om oss",
   description:
-    "Hos Frisören är en trygg frisörsalong i Leksand med utbildade frisörer med licens, gesäll- och mästarbrev. Vi är medlemmar i Frisörföretagarna och driver ett seriöst företag med yrkesstolthet.",
+    "Hos Frisören i Leksand har utbildade frisörer med gesäll- och mästarbrev. Salongen är medlem i Frisörföretagarna",
   alternates: {
     canonical: "https://www.hosfrisoren.se/om-oss",
   },
+  authors: [{ name: "Hos Frisören", url: "https://www.hosfrisoren.se" }],
 };
 
 function About() {

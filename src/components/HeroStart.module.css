@@ -29,6 +29,7 @@ section:has(.colorBlock) {
   display: block;
   font-family: var(--font-montserrat);
   font-size: clamp(2rem, 11.5vw, 5.7rem);
+  font-weight: 600;
   white-space: nowrap;
   width: 100%;
   max-width: 100%;
@@ -127,7 +128,7 @@ section:has(.colorBlock) {
 .heroImgContainer {
   width: 100%;
   background-color: var(--bg-4);
-  padding-bottom: var(--section-vertical-padding);
+  /* padding-bottom: var(--section-vertical-padding); */
 }
 
 .heroImgWidth {

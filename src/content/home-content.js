@@ -41,15 +41,38 @@ export const blockContentOne = {
   ),
 };
 
+export const blockContentCurrent = {
+  id: "section_current",
+  body: (
+    <>
+      <h2>Aktuellt</h2>
+      <ul className="current-section-list">
+        <li>
+          30% på alla produkter från Living proof (så långt lagret räcker).
+        </li>
+        <li>20% på alla inredningsprodukter (t.o.m den 9/1).</li>
+        <li>
+          Välkommen Selma - vår nya frisörelev! Hon gör behandlingar för 50% av
+          ordinarie priser och kan bokas via telefon (ej via onlinebokningen).
+        </li>
+        <li>
+          Nu kan du betala via Klarna hos oss när du handlar över 1.650kr.
+        </li>
+        <li>Vecka 3 (12&ndash;18/1) håller salongen stängt för renovering.</li>
+      </ul>
+    </>
+  ),
+};
+
 export const blockContentTwo = {
   id: "section_products",
   body: (
     <>
       <h2>Produkter och prismatchning</h2>
       <p>
-        Hos Frisören är återförsäljare av hårprodukter av toppkvalitet,
-        produkter som vi själva gärna använder och rekommenderar. De flesta
-        märkena är veganska, fria från sulfater, gluten, parabener och har
+        Hos Frisören är återförsäljare av premiumhårprodukter: Kevin Murphy,
+        K18, Epres och Eleven, märken vi själva använder och rekommenderar. De
+        flesta är veganska, fria från sulfater, gluten, parabener och har
         förpackningar av återvunnen plast. Fråga oss gärna om rådgivning, vi kan
         våra produkter och guidar dig gärna om vad som passar dig och din typ av
         hår.
@@ -57,12 +80,12 @@ export const blockContentTwo = {
       <p>
         <strong>
           OBS! Vi prismatchar våra hårprodukter. Hittar du någon av dem
-          billigare på webben så matchar vi det lägre priset.
+          billigare online så matchar vi det lägre priset.
         </strong>
       </p>
       <p>
-        Vi vill passa på att tacka till dig som handlar lokalt, du hjälper till
-        att hålla Leksands företag levande! 🖤
+        Vi vill passa på att rikta ett stort tack dig som handlar lokalt. Du
+        hjälper till att hålla Leksands företag levande! 🖤
       </p>
     </>
   ),
@@ -84,6 +107,11 @@ export const blockContentThree = {
         Vi handplockar allt i liten skala, med omsorg och känsla. Det ska kännas
         både personligt och inspirerande. Kanske hittar du just den där lilla
         saken du inte visste att du saknade.
+      </p>
+      <p>
+        <strong>
+          Fram till v.3 har vi 20% rabatt på ALLA INREDNINGSPRODUKTER.
+        </strong>
       </p>
     </>
   ),

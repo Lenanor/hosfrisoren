@@ -5,30 +5,50 @@ import "./globals.css";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SchemaHairSalon from "@/components/SchemaHairSalon.js";
 
 export const metadata = {
-  title: "Hos Frisören | Leksand ",
+  title: {
+    default: "Hos Frisören | Frisör i Leksand",
+    template: "%s | Hos Frisören",
+  },
   description:
-    "Licensierade frisörer med passion för färg och form. Återförsäljare av Kevin Murphy, Living Proof, K18, Eleven och Epres.",
+    "Hos Frisören erbjuder klippning, färg, slingor, balayage och hårförlängning. Försäljning av premiumhårprodukter och matchning av onlinepriser.",
   authors: [{ name: "Hos Frisören", url: "https://hosfrisoren.se" }],
-  referrer: "no-referrer",
+  referrer: "strict-origin-when-cross-origin",
   creator: "Hos Frisören",
   publisher: "Hos Frisören",
-  icon: [{ url: "/favicon.ico" }, { url: "/icon.png", type: "image/png" }],
-  apple: [{ url: "/apple-touch-icon.png" }],
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
   alternates: {
     canonical: "https://www.hosfrisoren.se",
+  },
+  openGraph: {
+    siteName: "Hos Frisören",
+    title: "Hos Frisören | Frisör i Leksand",
+    description:
+      "Hos Frisören i Leksand erbjuder klippning, färg, slingor, balayage, permanent och hårförlängning. Våra licensierade frisörer har gesäll- och mästarbrev. Vi säljer även premiumhårprodukter och matchar online priser.",
+    url: "https://www.hosfrisoren.se",
+    locale: "sv_SE",
+    type: "website",
   },
 };
 
 export const viewport = {
-  themeColor: "black",
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+  themeColor: "#000",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="sv" className={`${montserrat.variable} ${raleway.variable}`}>
-      <head></head>
+      <head>
+        <SchemaHairSalon />
+      </head>
       <body>
         <Link href="#main-content" id="skip-link">
           Till huvudinnehållet

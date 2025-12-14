@@ -77,7 +77,7 @@ html {
   height: 100%;
   overflow-x: hidden;
   cursor: default;
-  color: var(--color-black);
+  background-color: var(--color-white);
   -webkit-tap-highlight-color: transparent;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -88,8 +88,9 @@ html {
 }
 
 body {
+  min-height: 100vh;
   color: var(--color-black);
-  background-color: var(--bg-1);
+  background-color: var(--bg-4);
   font-family: var(--font-raleway);
   font-size: var(--document-font-size);
   font-weight: 400;
@@ -175,6 +176,20 @@ button {
 
 ul {
   list-style: none;
+}
+
+.color-bold {
+  font-weight: 600;
+  background-color: var(--bg-2);
+}
+
+.current-section-list {
+  list-style-type: square;
+  padding-left: 1.4rem;
+}
+
+.current-section-list li + li {
+  margin-top: 0.8rem;
 }
 
 /* Hides elements visually but keeps them accessible to screen readers */

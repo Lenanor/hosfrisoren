@@ -13,6 +13,7 @@ import styles from "./page.module.css";
 
 import {
   blockContentOne,
+  blockContentCurrent,
   blockContentTwo,
   blockContentThree,
   cardsData,
@@ -39,37 +40,54 @@ export default function Home() {
         </ColorBlock>
       </FadeInOnScroll>
 
+      <FadeInOnScroll>
+        <ColorBlock bg="bg-4">
+          <TwoColImage id={blockContentCurrent.id} mediaDirection="flip" />
+          <TwoColText mediaDirection="flip">
+            {blockContentCurrent.body}
+          </TwoColText>
+        </ColorBlock>
+      </FadeInOnScroll>
+
       {/* GALLERY */}
       <MediaBlock />
 
       {/* CARD LIST */}
-      <ColorBlock withGrid={false} bg="bg-3">
-        {cardsData?.heading && <h2>{cardsData.heading}</h2>}
-        <ul className={styles.cardList}>
-          {cardsData.cards.map((card) => (
-            <Card
-              key={card.id}
-              icon={card.icon}
-              title={card.title}
-              body={card.body}
-              cta={card.cta}
-              ctaText={card.ctaText}
-            />
-          ))}
-        </ul>
-      </ColorBlock>
+      <FadeInOnScroll>
+        <ColorBlock withGrid={false} bg="bg-3">
+          {cardsData?.heading && <h2>{cardsData.heading}</h2>}
+          <ul className={styles.cardList}>
+            {cardsData.cards.map((card) => (
+              <Card
+                key={card.id}
+                icon={card.icon}
+                title={card.title}
+                body={card.body}
+                cta={card.cta}
+                ctaText={card.ctaText}
+              />
+            ))}
+          </ul>
+        </ColorBlock>
+      </FadeInOnScroll>
 
-      <ColorBlock bg="bg-4">
-        <TwoColImage id={blockContentTwo.id} mediaDirection="flip" />
-        <TwoColText mediaDirection="flip">{blockContentTwo.body}</TwoColText>
-      </ColorBlock>
+      <FadeInOnScroll>
+        <ColorBlock bg="bg-4">
+          <TwoColImage id={blockContentTwo.id} />
+          <TwoColText>{blockContentTwo.body}</TwoColText>
+        </ColorBlock>
+      </FadeInOnScroll>
 
       <LogoCarousel />
 
-      <ColorBlock bg="bg-1">
-        <TwoColImage id={blockContentThree.id} />
-        <TwoColText>{blockContentThree.body}</TwoColText>
-      </ColorBlock>
+      <FadeInOnScroll>
+        <ColorBlock bg="bg-1">
+          <TwoColImage id={blockContentThree.id} mediaDirection="flip" />
+          <TwoColText mediaDirection="flip">
+            {blockContentThree.body}
+          </TwoColText>
+        </ColorBlock>
+      </FadeInOnScroll>
     </>
   );
 }

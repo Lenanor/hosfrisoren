@@ -10,8 +10,7 @@ export const introText = (
       >
         instagram-konto
       </a>{" "}
-      för avvikelser. Vi har öppet hela sommaren men alla frisörer är inte
-      alltid på plats (se semesterplaneringen nedan).
+      för avvikelser.
     </p>
     <p>
       Vår salong ligger på Torget 6 (
@@ -23,7 +22,14 @@ export const introText = (
         öppna i Google Maps
       </a>
       ) mitt i Leksand mellan Konditori Siljan och Sparbanken. Vi är kontantfria
-      och tar endast betalning via kontokort och Swish.
+      och tar endast betalning via kontokort, Swish och, för köp över 1.650:-,
+      via Klarna.
+    </p>
+    <p>
+      <span className="color-bold">
+        OBS! 12&ndash;16 januari (vecka 3) håller vi STÄNGT för renovering av
+        salongen.
+      </span>
     </p>
   </>
 );
