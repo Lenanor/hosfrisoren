@@ -30,7 +30,7 @@ function Open() {
       textContent={intro}
       className={styles.openIntro}
     >
-      <FadeInOnScroll>
+      {/* <FadeInOnScroll>
         <div className={styles.colorBackground}>
           <h2>Öppettider jul och januari:</h2>
           <p className={styles.bold}> DECEMBER</p>
@@ -73,7 +73,7 @@ function Open() {
             RENOVERING
           </p>
         </div>
-      </FadeInOnScroll>
+      </FadeInOnScroll> */}
     </SubPageIntro>
   );
 }

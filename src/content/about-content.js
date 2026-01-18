@@ -115,15 +115,11 @@ export const stylistsData = {
       icon: "scissors",
       title: (
         <>
-          Louisa <span>Trainee</span>
+          Louisa <span>Gesällbrev</span>
         </>
       ),
       body: (
         <>
-          <span>
-            Jag är trainee inom frisöryrket och har varit verksam i 1,5 år. Just
-            nu förbereder jag mig inför mitt gesällprov.
-          </span>
           <span>
             Varje dag hittar jag inspiration i både mina kollegor och de
             fantastiska kunder som sätter sig i min stol. Det är mötet med
@@ -162,10 +158,10 @@ export const stylistsData = {
       ),
       body: (
         <>
-          <span>SELMA är elev hos oss, mer om henne kommer inom kort.</span>
+          <span>Selma är ny elev hos oss, mer om henne kommer inom kort.</span>
           <span>
-            Selma utför behandlingar med 50% rabatt. Du kan boka tid hos henne
-            genom att ringa salongen (ej via den digitala bokningen).
+            Hon utför klippning och behandlingar med 50% rabatt. Du kan boka
+            klippning hos henne online, övrigt bokas genom att ringa salongen.
           </span>
         </>
       ),

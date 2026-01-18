@@ -25,11 +25,5 @@ export const introText = (
       och tar endast betalning via kontokort, Swish och, för köp över 1.650:-,
       via Klarna.
     </p>
-    <p>
-      <span className="color-bold">
-        OBS! 12&ndash;16 januari (vecka 3) håller vi STÄNGT för renovering av
-        salongen.
-      </span>
-    </p>
   </>
 );

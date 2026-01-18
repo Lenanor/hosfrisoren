@@ -82,14 +82,6 @@ const logos = [
     sizes: "(min-width: 481px) 100px, 85px",
   },
   {
-    src: lp,
-    alt: "Logotyp för hårprodukten Living Proof",
-    className: styles.lp,
-    width: 320,
-    height: 59,
-    sizes: "(min-width: 481px) 160px, 125px",
-  },
-  {
     src: k18,
     alt: "Logotyp för hårprodukten K18",
     className: styles.k18,
@@ -119,6 +111,8 @@ function LogoGroup() {
           width={logo.width}
           height={logo.height}
           sizes={logo.sizes}
+          priority={false}
+          loading="lazy"
         />
       ))}
     </>

@@ -48,17 +48,26 @@ export const blockContentCurrent = {
       <h2>Aktuellt</h2>
       <ul className="current-section-list">
         <li>
-          30% på alla produkter från Living proof (så långt lagret räcker).
+          Nu är renoveringen av salongen färdig. Kom in och kika hur det blev,
+          vårt nya golv är 100% fantastiskt.
         </li>
-        <li>20% på alla inredningsprodukter (t.o.m den 9/1).</li>
         <li>
-          Välkommen Selma - vår nya frisörelev! Hon gör behandlingar för 50% av
-          ordinarie priser och kan bokas via telefon (ej via onlinebokningen).
+          Hurra för Louisa som klarat sitt gesällprov och har därmed gått från
+          att vara trainee till behörig frisör. GRATTIS Louisa!
+        </li>
+        <li>
+          Mer roliga nyheter - vår gamla kollega Sofie kommer tillbaka från
+          Skottland och börjar jobba hos oss igen i februari. Du kan redan nu
+          boka tid hos Sofie.
+        </li>
+        <li>
+          Välkommen Selma - vår nya frisörelev! Selma klipper och gör
+          behandlingar med 50% rabatt på ordinarie priser. Klippning kan bokas
+          via onlinebokningen, övrigt bokas via telefon.
         </li>
         <li>
           Nu kan du betala via Klarna hos oss när du handlar över 1.650kr.
         </li>
-        <li>Vecka 3 (12&ndash;18/1) håller salongen stängt för renovering.</li>
       </ul>
     </>
   ),
@@ -107,11 +116,6 @@ export const blockContentThree = {
         Vi handplockar allt i liten skala, med omsorg och känsla. Det ska kännas
         både personligt och inspirerande. Kanske hittar du just den där lilla
         saken du inte visste att du saknade.
-      </p>
-      <p>
-        <strong>
-          Fram till v.3 har vi 20% rabatt på ALLA INREDNINGSPRODUKTER.
-        </strong>
       </p>
     </>
   ),

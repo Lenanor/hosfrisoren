@@ -11,7 +11,7 @@
 
 @media screen and (min-width: 769px) {
   .logos {
-    max-width: calc(3 * 900px); /* three times the logo group width*/
+    max-width: calc(3 * 670px); /* three times the logo group width*/
   }
 }
 
@@ -27,20 +27,12 @@
 
 .logos::before {
   left: 0;
-  background: linear-gradient(
-    to left,
-    rgba(255, 255, 255, 0),
-    var(--color-body)
-  );
+  background: linear-gradient(to left, #e3e8cb4d, #f7f7eb);
 }
 
 .logos::after {
   right: 0;
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0),
-    var(--color-body)
-  );
+  background: linear-gradient(to right, #e3e8cb4d, #f7f7eb);
 }
 
 .logos:hover .logosSlide {
@@ -57,7 +49,7 @@
 }
 
 .logosSlide {
-  animation: slide 25s linear infinite;
+  animation: slide 15s linear infinite;
   display: inline-block;
 }
 
