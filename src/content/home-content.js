@@ -48,22 +48,27 @@ export const blockContentCurrent = {
       <h2>Aktuellt</h2>
       <ul className="current-section-list">
         <li>
-          Nu är renoveringen av salongen färdig. Kom in och kika hur det blev,
-          vårt nya golv är 100% fantastiskt.
+          Från och med nu jobbar vi följande dagar:
+          <br />
+          <span>
+            <strong>Nina:</strong> tisdag-fredag
+          </span>
+          <br />
+          <span>
+            <strong>Lisa:</strong> måndag, tisdag, torsdag, fredag
+          </span>
+          <br />
+          <span>
+            <strong>Sofie:</strong> tisdag, onsdag, torsdag
+          </span>
         </li>
         <li>
-          Hurra för Louisa som klarat sitt gesällprov och har därmed gått från
-          att vara trainee till behörig frisör. GRATTIS Louisa!
+          <strong>Louisa</strong> väntar en bebis! Passa på att boka tid innan
+          hon går på mammaledighet i slutet av september.
         </li>
         <li>
-          Mer roliga nyheter - vår gamla kollega Sofie kommer tillbaka från
-          Skottland och börjar jobba hos oss igen i februari. Du kan redan nu
-          boka tid hos Sofie.
-        </li>
-        <li>
-          Välkommen Selma - vår nya frisörelev! Selma klipper och gör
-          behandlingar med 50% rabatt på ordinarie priser. Klippning kan bokas
-          via onlinebokningen, övrigt bokas via telefon.
+          Den <strong>15-16 oktober</strong> stänger vi salongen och åker vi på
+          kurs för att vidareutveckla oss.
         </li>
         <li>
           Nu kan du betala via Klarna hos oss när du handlar över 1.650kr.
@@ -79,7 +84,7 @@ export const blockContentTwo = {
     <>
       <h2>Produkter och prismatchning</h2>
       <p>
-        Hos Frisören är återförsäljare av premiumhårprodukter: Kevin Murphy,
+        Hos Frisören är återförsäljare av premiumhårprodukter från Kevin Murphy,
         K18, Epres och Eleven, märken vi själva använder och rekommenderar. De
         flesta är veganska, fria från sulfater, gluten, parabener och har
         förpackningar av återvunnen plast. Fråga oss gärna om rådgivning, vi kan

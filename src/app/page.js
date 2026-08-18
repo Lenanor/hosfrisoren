@@ -20,10 +20,40 @@ import {
 } from "@/content/home-content.js";
 import SmartLink from "@/components/ui/SmartLink";
 
+export const metadata = {
+  title: "Start | Hos Frisören",
+  description:
+    "Hos Frisören erbjuder klippning, färg, slingor, balayage och hårförlängning. Försäljning av premiumhårprodukter och matchning av onlinepriser",
+  alternates: {
+    canonical: "https://www.hosfrisoren.se",
+  },
+  authors: [{ name: "Hos Frisören", url: "https://www.hosfrisoren.se" }],
+};
+
 export default function Home() {
   return (
     <>
       <HeroStart />
+
+      {/* CARD LIST */}
+      <FadeInOnScroll>
+        <ColorBlock withGrid={false} bg="bg-3">
+          {cardsData?.heading && <h2>{cardsData.heading}</h2>}
+          <ul className={styles.cardList}>
+            {cardsData.cards.map((card) => (
+              <Card
+                key={card.id}
+                icon={card.icon}
+                title={card.title}
+                body={card.body}
+                cta={card.cta}
+                ctaText={card.ctaText}
+              />
+            ))}
+          </ul>
+        </ColorBlock>
+      </FadeInOnScroll>
+
       <FadeInOnScroll>
         <ColorBlock bg="bg-1">
           <TwoColImage id={blockContentOne.id} />
@@ -52,7 +82,7 @@ export default function Home() {
       {/* GALLERY */}
       <MediaBlock />
 
-      {/* CARD LIST */}
+      {/* CARD LIST
       <FadeInOnScroll>
         <ColorBlock withGrid={false} bg="bg-3">
           {cardsData?.heading && <h2>{cardsData.heading}</h2>}
@@ -69,7 +99,7 @@ export default function Home() {
             ))}
           </ul>
         </ColorBlock>
-      </FadeInOnScroll>
+      </FadeInOnScroll> */}
 
       <FadeInOnScroll>
         <ColorBlock bg="bg-4">

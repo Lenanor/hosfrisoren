@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 
+import HeroImage from "../assets/images/salong_desktop.jpg";
+
 import ColorBlock from "./ui/ColorBlock";
 import SmartLink from "./ui/SmartLink";
 import SoMeGroup from "./ui/SoMeGroup";

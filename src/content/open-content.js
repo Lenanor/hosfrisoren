@@ -1,16 +1,18 @@
 export const introText = (
   <>
     <p>
-      I regel gäller ovanstående tider. Håll gärna koll på Hos Frisörens{" "}
+      Ovanstående tider gäller i regel, men avvikelser kan förekomma (t.ex.
+      tidigare öppning, senare stängning eller lördagsöppet). Aktuella tider
+      hittar du enklast i vår{" "}
       <a
-        href="https://www.instagram.com/hosfrisoren/"
+        href="https://bokning.voady.se/hosfrisoren/hosfrisoren/"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Öppna Hos Frisörens Instagramsida i extern länk"
       >
-        instagram-konto
-      </a>{" "}
-      för avvikelser.
+        onlinebokning
+      </a>
+      .
     </p>
     <p>
       Vår salong ligger på Torget 6 (
@@ -21,9 +23,11 @@ export const introText = (
       >
         öppna i Google Maps
       </a>
-      ) mitt i Leksand mellan Konditori Siljan och Sparbanken. Vi är kontantfria
-      och tar endast betalning via kontokort, Swish och, för köp över 1.650:-,
-      via Klarna.
+      ) mitt i Leksand, mellan Konditori Siljan och Sparbanken.
+    </p>
+    <p>
+      Vi är kontantfria och tar endast betalning via kontokort, Swish och Klarna
+      (vid köp över 1.650:-).
     </p>
   </>
 );

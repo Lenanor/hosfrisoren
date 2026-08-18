@@ -13,7 +13,7 @@ export const metadata = {
     template: "%s | Hos Frisören",
   },
   description:
-    "Hos Frisören erbjuder klippning, färg, slingor, balayage och hårförlängning. Försäljning av premiumhårprodukter och matchning av onlinepriser.",
+    "Hos Frisören erbjuder klippning, färg, slingor, balayage, permanent och hårförlängning. Vi säljer premiumhårprodukter och matchar onlinepriser. Våra licensierade frisörer har gesäll- och mästarbrev.",
   authors: [{ name: "Hos Frisören", url: "https://hosfrisoren.se" }],
   referrer: "strict-origin-when-cross-origin",
   creator: "Hos Frisören",
@@ -24,15 +24,6 @@ export const metadata = {
   },
   alternates: {
     canonical: "https://www.hosfrisoren.se",
-  },
-  openGraph: {
-    siteName: "Hos Frisören",
-    title: "Hos Frisören | Frisör i Leksand",
-    description:
-      "Hos Frisören i Leksand erbjuder klippning, färg, slingor, balayage, permanent och hårförlängning. Våra licensierade frisörer har gesäll- och mästarbrev. Vi säljer även premiumhårprodukter och matchar online priser.",
-    url: "https://www.hosfrisoren.se",
-    locale: "sv_SE",
-    type: "website",
   },
 };
 
@@ -46,9 +37,8 @@ export const viewport = {
 export default function RootLayout({ children }) {
   return (
     <html lang="sv" className={`${montserrat.variable} ${raleway.variable}`}>
-      <head>
-        <SchemaHairSalon />
-      </head>
+      {/* <head></head> */}
+      {/* Next.js is generating the <head> tag automatically from the metadata export! */}
       <body>
         <Link href="#main-content" id="skip-link">
           Till huvudinnehållet
@@ -56,6 +46,7 @@ export default function RootLayout({ children }) {
         <Header />
         <main id="main-content">{children}</main>
         <Footer />
+        <SchemaHairSalon />
       </body>
     </html>
   );

@@ -34,7 +34,7 @@ function Footer() {
           <div>
             <h2>Kontakt</h2>
             <address className={styles.address}>
-              <span>Hos Frisören</span>
+              <span>Hos Frisören i Leksand AB</span>
               <span>Torget 6, Leksand</span>
               <a href="tel:+4624710038">0247–100 38</a>
               <a href="mailto:info@hosfrisoren.se">info@hosfrisoren.se</a>
@@ -45,6 +45,7 @@ function Footer() {
                 Länken öppnar adressen Torget 6 i extern länk
               </span>
             </a>
+            <span>Org.nr: 556721-5412</span>
           </div>
           <div>
             <h2>Följ oss</h2>
