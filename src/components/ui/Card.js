@@ -11,6 +11,7 @@ import styles from "./Card.module.css";
 function Card({
   title,
   body,
+  headingLevel = 3,
   icon = null,
   img = null,
   cta = null,
@@ -24,15 +25,17 @@ function Card({
 
   const iconComponent = iconMap[icon];
 
+  const Heading = headingLevel === 2 ? "h2" : "h3";
+
   const heading =
     cta === null ? (
-      <h3>{title}</h3>
+      <Heading className={styles.cardHeading}>{title}</Heading>
     ) : (
-      <h3 className={styles.title}>
+      <Heading className={`${styles.cardHeading} ${styles.title}`}>
         <SmartLink className={styles.primaryAction} href={cta}>
           {title}
         </SmartLink>
-      </h3>
+      </Heading>
     );
 
   return (

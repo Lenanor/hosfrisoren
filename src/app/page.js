@@ -46,6 +46,7 @@ export default function Home() {
                 icon={card.icon}
                 title={card.title}
                 body={card.body}
+                headingLevel={2}
                 cta={card.cta}
                 ctaText={card.ctaText}
               />
