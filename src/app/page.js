@@ -20,12 +20,44 @@ import {
 } from "@/content/home-content.js";
 import SmartLink from "@/components/ui/SmartLink";
 
+export const metadata = {
+  title: "Start | Hos Frisören",
+  description:
+    "Hos Frisören erbjuder klippning, färg, slingor, balayage och hårförlängning. Försäljning av premiumhårprodukter och matchning av onlinepriser",
+  alternates: {
+    canonical: "https://www.hosfrisoren.se",
+  },
+  authors: [{ name: "Hos Frisören", url: "https://www.hosfrisoren.se" }],
+};
+
 export default function Home() {
   return (
     <>
       <HeroStart />
+
+      {/* CARD SECTION */}
       <FadeInOnScroll>
-        <ColorBlock bg="bg-1">
+        <ColorBlock withGrid={false} bg="bg-1">
+          {cardsData?.heading && <h2>{cardsData.heading}</h2>}
+          <ul className={styles.cardList}>
+            {cardsData.cards.map((card) => (
+              <Card
+                key={card.id}
+                icon={card.icon}
+                title={card.title}
+                body={card.body}
+                headingLevel={2}
+                cta={card.cta}
+                ctaText={card.ctaText}
+              />
+            ))}
+          </ul>
+        </ColorBlock>
+      </FadeInOnScroll>
+
+      {/* WELCOME SECTION */}
+      <FadeInOnScroll>
+        <ColorBlock bg="bg-3">
           <TwoColImage id={blockContentOne.id} />
           <TwoColText>
             {blockContentOne.body}
@@ -40,8 +72,9 @@ export default function Home() {
         </ColorBlock>
       </FadeInOnScroll>
 
+      {/* NEWS SECTION */}
       <FadeInOnScroll>
-        <ColorBlock bg="bg-4">
+        <ColorBlock bg="bg-1">
           <TwoColImage id={blockContentCurrent.id} mediaDirection="flip" />
           <TwoColText mediaDirection="flip">
             {blockContentCurrent.body}
@@ -52,25 +85,7 @@ export default function Home() {
       {/* GALLERY */}
       <MediaBlock />
 
-      {/* CARD LIST */}
-      <FadeInOnScroll>
-        <ColorBlock withGrid={false} bg="bg-3">
-          {cardsData?.heading && <h2>{cardsData.heading}</h2>}
-          <ul className={styles.cardList}>
-            {cardsData.cards.map((card) => (
-              <Card
-                key={card.id}
-                icon={card.icon}
-                title={card.title}
-                body={card.body}
-                cta={card.cta}
-                ctaText={card.ctaText}
-              />
-            ))}
-          </ul>
-        </ColorBlock>
-      </FadeInOnScroll>
-
+      {/* PRODUCTS SECTION */}
       <FadeInOnScroll>
         <ColorBlock bg="bg-4">
           <TwoColImage id={blockContentTwo.id} />
@@ -80,6 +95,7 @@ export default function Home() {
 
       <LogoCarousel />
 
+      {/* SURPRISE SECTION */}
       <FadeInOnScroll>
         <ColorBlock bg="bg-1">
           <TwoColImage id={blockContentThree.id} mediaDirection="flip" />

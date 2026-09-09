@@ -48,25 +48,30 @@ export const blockContentCurrent = {
       <h2>Aktuellt</h2>
       <ul className="current-section-list">
         <li>
-          Nu är renoveringen av salongen färdig. Kom in och kika hur det blev,
-          vårt nya golv är 100% fantastiskt.
+          Under hösten jobbar vi följande dagar:
+          <br />
+          <span>
+            <strong>Nina:</strong> tisdag-fredag
+          </span>
+          <br />
+          <span>
+            <strong>Lisa:</strong> måndag, tisdag, torsdag, fredag
+          </span>
+          <br />
+          <span>
+            <strong>Sofie:</strong> tisdag, onsdag, torsdag
+          </span>
         </li>
         <li>
-          Hurra för Louisa som klarat sitt gesällprov och har därmed gått från
-          att vara trainee till behörig frisör. GRATTIS Louisa!
+          <strong>Louisa</strong> väntar en bebis! Passa på att boka tid innan
+          hon går på mammaledighet i slutet av september.
         </li>
         <li>
-          Mer roliga nyheter - vår gamla kollega Sofie kommer tillbaka från
-          Skottland och börjar jobba hos oss igen i februari. Du kan redan nu
-          boka tid hos Sofie.
+          Den <strong>15-16 oktober</strong> stänger salongen och frisörerna
+          åker på kurs och fyller på med nya kunskaper och inspiration.
         </li>
         <li>
-          Välkommen Selma - vår nya frisörelev! Selma klipper och gör
-          behandlingar med 50% rabatt på ordinarie priser. Klippning kan bokas
-          via onlinebokningen, övrigt bokas via telefon.
-        </li>
-        <li>
-          Nu kan du betala via Klarna hos oss när du handlar över 1.650kr.
+          Nu kan du betala via Klarna på salongen när du handlar över 1.650kr.
         </li>
       </ul>
     </>
@@ -79,7 +84,7 @@ export const blockContentTwo = {
     <>
       <h2>Produkter och prismatchning</h2>
       <p>
-        Hos Frisören är återförsäljare av premiumhårprodukter: Kevin Murphy,
+        Hos Frisören är återförsäljare av premiumhårprodukter från Kevin Murphy,
         K18, Epres och Eleven, märken vi själva använder och rekommenderar. De
         flesta är veganska, fria från sulfater, gluten, parabener och har
         förpackningar av återvunnen plast. Fråga oss gärna om rådgivning, vi kan
@@ -131,7 +136,7 @@ export const cardsData = {
       id: "scissors",
       icon: "scissors",
       title: "Vi är licencierade frisörer",
-      body: "Salongen är medlem i Frisörföretagarna och frisörerna som jobbar här är utbildade, har frisörlicens och har avlagt godkänt gesällprov.....",
+      body: "Salongen är medlem i Frisörföretagarna och frisörerna som jobbar här är utbildade, har frisörlicens och har avlagt godkänt gesällprov.",
       cta: "/om-oss",
       ctaText: "Läs mer",
     },
@@ -139,7 +144,7 @@ export const cardsData = {
       id: "clock",
       icon: "clock",
       title: "Öppettider",
-      body: "I regel gäller: måndag: 10 - 18, tisdag - fredag: 9 - 18, helg: stängt. Håll gärna koll på Hos Frisörens instagram-konto för avvikelser. Vi har öppet hela.....",
+      body: "I regel gäller: måndag - fredag: 10 - 17, helg: stängt. Men avvikelser kan förekomma, t.ex lördagstider. Aktuella tider hittar du enklast i vår onlinebokning.",
       cta: "/oppettider",
       ctaText: "Läs mer",
     },

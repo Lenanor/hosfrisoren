@@ -125,13 +125,13 @@ export const stylistsData = {
             fantastiska kunder som sätter sig i min stol. Det är mötet med
             människor och känslan av att få hjälpa någon känna sig fin som gör
             mitt jobb så roligt.
-          </span>{" "}
+          </span>
           <span>
             Klippningar är det jag tycker allra mest om att jobba med, oavsett
             om det handlar om korta frisyrer eller långa längder. Jag älskar
             förändringar, särskilt när vi tillsammans skapar en ny stil där
             klippning och färg får samspela.
-          </span>{" "}
+          </span>
           <span>
             Många kan uppleva problem som friss, torrt hår och kluvna toppar,
             men ofta är lösningen enklare än man tror. Mitt bästa tips är att
@@ -149,19 +149,43 @@ export const stylistsData = {
       ),
     },
     {
-      id: "selma",
+      id: "sofie",
       icon: "scissors",
       title: (
         <>
-          Selma <span>Elev</span>
+          Sofie <span>Gesällbrev</span>
         </>
       ),
       body: (
         <>
-          <span>Selma är ny elev hos oss, mer om henne kommer inom kort.</span>
           <span>
-            Hon utför klippning och behandlingar med 50% rabatt. Du kan boka
-            klippning hos henne online, övrigt bokas genom att ringa salongen.
+            Att arbeta som frisör är ett väldigt varierande yrke där ingen
+            arbetsdag liknar den andra, det gör att jag aldrig tröttnar. Jag har
+            arbetat i branschen i 8 år, både i Sverige och Skottland, och
+            uppskattar de fina mötena jag har med mina kunder och möjligheten
+            att få ta del av deras livshistorier.
+          </span>
+          <span>
+            Det jag gillar lite extra är att klippa korta frisyrer och att
+            hjälpa kunder med hårbottenproblem som kan uppstå av olika
+            anledningar. Jag tycker om att utreda symtom och orsaker bakom
+            problematiken och att föreslå behandlingar och produkter som kan
+            leda till en långsiktig förbättring och ett friskare hår och
+            hårbotten.
+          </span>
+          <span>
+            Mitt bästa tips för hårvård i allmänhet är att satsa på ett
+            kvalitetschampoo som rengör håret på djupet och skapar en bra grund,
+            och därefter avsluta med ett balsam som är anpassat efter just din
+            hårtyp och dina behov. Många underskattar vilken stor skillnad rätt
+            produkter faktiskt kan göra, men med rätt vård blir håret både
+            friskare, mer lättskött och finare över tid.
+          </span>
+          <span>
+            Jag bor i Leksand och när jag är ledig ägnar jag mig gärna åt yoga
+            eller äventyr utomhus tillsammans med min hund Charles. Att vara med
+            honom är min bästa källa till att hitta ny energi, liksom att umgås
+            med min familj och mina vänner.
           </span>
         </>
       ),

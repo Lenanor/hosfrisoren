@@ -7,7 +7,7 @@ import { introText, stylistsData, careerData } from "@/content/about-content";
 import SubPageIntro from "@/components/ui/SubPageIntro";
 
 export const metadata = {
-  title: "Om oss",
+  title: "Om oss | Hos Frisören",
   description:
     "Hos Frisören i Leksand har utbildade frisörer med gesäll- och mästarbrev. Salongen är medlem i Frisörföretagarna",
   alternates: {

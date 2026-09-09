@@ -7,9 +7,9 @@ import styles from "./page.module.css";
 import FadeInOnScroll from "@/components/ui/FadeInOnScroll";
 
 export const metadata = {
-  title: "Öppettider",
+  title: "Öppettider | Hos Frisören",
   description:
-    "Se aktuella öppettider för Hos Frisören i Leksand. Tiderna kan variera, följ oss på Instagram för uppdateringar. Du hittar oss på Torget 6.",
+    "I regel öppet mån–fre: 10–17 men tiderna kan variera, se vår onlinebokning för aktuella tider.",
   alternates: {
     canonical: "https://www.hosfrisoren.se/oppettider",
   },
@@ -30,50 +30,18 @@ function Open() {
       textContent={intro}
       className={styles.openIntro}
     >
-      {/* <FadeInOnScroll>
+      <FadeInOnScroll>
         <div className={styles.colorBackground}>
-          <h2>Öppettider jul och januari:</h2>
-          <p className={styles.bold}> DECEMBER</p>
+          <h2>Salongen är stängd pga kurs:</h2>
+          <p className={styles.bold}>OKTOBER</p>
           <p>
-            <span className={styles.dates}>22/12</span> 9&ndash;18
+            <span className={styles.dates}>15/10</span>
           </p>
           <p>
-            <span className={styles.dates}>23/12</span> 8.15&ndash;17
-          </p>
-          <p>
-            <span className={styles.dates}>24/12</span> JULAFTON STÄNGT
-          </p>
-          <p>
-            <span className={styles.dates}>29/12</span> 9&ndash;18
-          </p>
-          <p>
-            <span className={styles.dates}>30/12</span> 8.15&ndash;17
-          </p>
-          <p className={styles.bold}>JANUARI</p>
-          <p>
-            <span className={styles.dates}>2/1</span> 9&ndash;18
-          </p>
-          <p>
-            <span className={styles.dates}>5/1</span> 9&ndash;16
-          </p>
-          <p>
-            <span className={styles.dates}>6/1</span> TRETTONDAGEN STÄNGT
-          </p>
-          <p>
-            <span className={styles.dates}>7/1</span> 9&ndash;18
-          </p>
-          <p>
-            <span className={styles.dates}>8/1</span> 9&ndash;18
-          </p>
-          <p>
-            <span className={styles.dates}>9/1</span> 9&ndash;18
-          </p>
-          <p>
-            <span className={styles.dates}>12&ndash;16/1</span> STÄNGT FÖR
-            RENOVERING
+            <span className={styles.dates}>16/10</span>
           </p>
         </div>
-      </FadeInOnScroll> */}
+      </FadeInOnScroll>
     </SubPageIntro>
   );
 }
