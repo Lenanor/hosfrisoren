@@ -35,9 +35,9 @@ export default function Home() {
     <>
       <HeroStart />
 
-      {/* CARD LIST */}
+      {/* CARD SECTION */}
       <FadeInOnScroll>
-        <ColorBlock withGrid={false} bg="bg-3">
+        <ColorBlock withGrid={false} bg="bg-1">
           {cardsData?.heading && <h2>{cardsData.heading}</h2>}
           <ul className={styles.cardList}>
             {cardsData.cards.map((card) => (
@@ -54,8 +54,9 @@ export default function Home() {
         </ColorBlock>
       </FadeInOnScroll>
 
+      {/* WELCOME SECTION */}
       <FadeInOnScroll>
-        <ColorBlock bg="bg-1">
+        <ColorBlock bg="bg-3">
           <TwoColImage id={blockContentOne.id} />
           <TwoColText>
             {blockContentOne.body}
@@ -70,8 +71,9 @@ export default function Home() {
         </ColorBlock>
       </FadeInOnScroll>
 
+      {/* NEWS SECTION */}
       <FadeInOnScroll>
-        <ColorBlock bg="bg-4">
+        <ColorBlock bg="bg-1">
           <TwoColImage id={blockContentCurrent.id} mediaDirection="flip" />
           <TwoColText mediaDirection="flip">
             {blockContentCurrent.body}
@@ -82,25 +84,7 @@ export default function Home() {
       {/* GALLERY */}
       <MediaBlock />
 
-      {/* CARD LIST
-      <FadeInOnScroll>
-        <ColorBlock withGrid={false} bg="bg-3">
-          {cardsData?.heading && <h2>{cardsData.heading}</h2>}
-          <ul className={styles.cardList}>
-            {cardsData.cards.map((card) => (
-              <Card
-                key={card.id}
-                icon={card.icon}
-                title={card.title}
-                body={card.body}
-                cta={card.cta}
-                ctaText={card.ctaText}
-              />
-            ))}
-          </ul>
-        </ColorBlock>
-      </FadeInOnScroll> */}
-
+      {/* PRODUCTS SECTION */}
       <FadeInOnScroll>
         <ColorBlock bg="bg-4">
           <TwoColImage id={blockContentTwo.id} />
@@ -110,6 +94,7 @@ export default function Home() {
 
       <LogoCarousel />
 
+      {/* SURPRISE SECTION */}
       <FadeInOnScroll>
         <ColorBlock bg="bg-1">
           <TwoColImage id={blockContentThree.id} mediaDirection="flip" />

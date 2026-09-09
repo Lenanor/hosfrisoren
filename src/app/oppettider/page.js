@@ -9,7 +9,7 @@ import FadeInOnScroll from "@/components/ui/FadeInOnScroll";
 export const metadata = {
   title: "Öppettider | Hos Frisören",
   description:
-    "I regel har vi öppet mån–fre: 10–17 men tiderna kan variera, se vår onlinebokning. Du hittar oss på Torget 6.",
+    "I regel öppet mån–fre: 10–17 men tiderna kan variera, se vår onlinebokning för aktuella tider.",
   alternates: {
     canonical: "https://www.hosfrisoren.se/oppettider",
   },

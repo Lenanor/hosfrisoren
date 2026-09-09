@@ -1,8 +1,3 @@
-import Link from "next/link";
-import Image from "next/image";
-
-import HeroImage from "../assets/images/salong_desktop.jpg";
-
 import ColorBlock from "./ui/ColorBlock";
 import SmartLink from "./ui/SmartLink";
 import SoMeGroup from "./ui/SoMeGroup";
@@ -54,19 +49,38 @@ function HeroStart() {
       <div className={styles.heroImgContainer}>
         <div className={styles.heroImgWidth}>
           <picture>
+            {/* Mobile */}
+            <source
+              srcSet="/images/salong_tablet.webp"
+              media="(max-width: 480px)"
+              type="image/webp"
+            />
             <source
               srcSet="/images/salong_mobile.jpg"
               media="(max-width: 480px)"
             />
+            {/* Tablet */}
+            <source
+              srcSet="/images/salong_tablet.webp"
+              media="(max-width: 1024px)"
+              type="image/webp"
+            />
             <source
               srcSet="/images/salong_tablet.jpg"
               media="(max-width: 1024px)"
+            />
+            {/* Desktop */}
+            <source
+              srcSet="/images/salong_desktop.webp"
+              media="(min-width: 1025px)"
+              type="image/webp"
             />
             <img
               className={styles.fullWidthImg}
               src="/images/salong_desktop.jpg"
               alt="Vy över frisörsalongen Hos Frisören i Leksand"
               loading="eager"
+              fetchPriority="high"
               width="1440"
               height="617"
             />
