@@ -48,7 +48,7 @@ export const blockContentCurrent = {
       <h2>Aktuellt</h2>
       <ul className="current-section-list">
         <li>
-          Från och med nu jobbar vi följande dagar:
+          Under hösten jobbar vi följande dagar:
           <br />
           <span>
             <strong>Nina:</strong> tisdag-fredag
@@ -67,11 +67,11 @@ export const blockContentCurrent = {
           hon går på mammaledighet i slutet av september.
         </li>
         <li>
-          Den <strong>15-16 oktober</strong> stänger vi salongen och åker vi på
-          kurs för att vidareutveckla oss.
+          Den <strong>15-16 oktober</strong> stänger salongen och frisörerna
+          åker på kurs och fyller på med nya kunskaper och inspiration.
         </li>
         <li>
-          Nu kan du betala via Klarna hos oss när du handlar över 1.650kr.
+          Nu kan du betala via Klarna på salongen när du handlar över 1.650kr.
         </li>
       </ul>
     </>
