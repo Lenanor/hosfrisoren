@@ -51,7 +51,7 @@ function HeroStart() {
           <picture>
             {/* Mobile */}
             <source
-              srcSet="/images/salong_tablet.webp"
+              srcSet="/images/salong_mobile.webp"
               media="(max-width: 480px)"
               type="image/webp"
             />
