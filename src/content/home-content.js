@@ -48,30 +48,21 @@ export const blockContentCurrent = {
       <h2>Aktuellt</h2>
       <ul className="current-section-list">
         <li>
-          Under hösten jobbar vi följande dagar:
-          <br />
-          <span>
-            <strong>Nina:</strong> tisdag-fredag
-          </span>
-          <br />
-          <span>
-            <strong>Lisa:</strong> måndag, tisdag, torsdag, fredag
-          </span>
-          <br />
-          <span>
-            <strong>Sofie:</strong> tisdag, onsdag, torsdag
-          </span>
+          Vi börjar få högt bokningstryck på tider. <strong>Boka nu</strong> för
+          att säkra en tid innan jul- och nyår.
         </li>
         <li>
-          <strong>Louisa</strong> väntar en bebis! Passa på att boka tid innan
-          hon går på mammaledighet i slutet av september.
+          <strong>Fixa julklapparna på Hos Frisören.</strong> Vi har lyxiga
+          presentaskar med hårprodukter och fina prydnadsföremål i
+          inredningshörnan.
         </li>
         <li>
-          Den <strong>15-16 oktober</strong> stänger salongen och frisörerna
-          åker på kurs och fyller på med nya kunskaper och inspiration.
+          <strong>Babynytt:</strong> en frisörbebis är född! Stort grattis
+          Louisa och välkommen åter när din föräldraledighet är över.
         </li>
         <li>
-          Nu kan du betala via Klarna på salongen när du handlar över 1.650kr.
+          Nu kan du betala via <strong>Klarna</strong> på salongen när du
+          handlar över 1.650kr.
         </li>
       </ul>
     </>

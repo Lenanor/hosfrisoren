@@ -32,13 +32,23 @@ function Open() {
     >
       <FadeInOnScroll>
         <div className={styles.colorBackground}>
-          <h2>Salongen är stängd pga kurs:</h2>
-          <p className={styles.bold}>OKTOBER</p>
+          <h2>Stängt under julhelgen:</h2>
           <p>
-            <span className={styles.dates}>15/10</span>
+            <span className={styles.dates}>
+              🎅🏼 Julafton, juldagen och annandagen
+            </span>
           </p>
           <p>
-            <span className={styles.dates}>16/10</span>
+            <span className={styles.dates}>🎊 Nyårsafton och nyårsdagen</span>
+          </p>
+          <p>
+            <span className={styles.dates}>⭐️ Trettondagen</span>
+          </p>
+          <br />
+          <p>
+            <span className={styles.dates}>
+              Alla andra vardagar är salongen öppen enligt ordinarie tider.
+            </span>
           </p>
         </div>
       </FadeInOnScroll>
