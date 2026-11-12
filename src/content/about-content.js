@@ -121,6 +121,9 @@ export const stylistsData = {
       body: (
         <>
           <span>
+            <strong>Föräldraledig hösten -26 och framåt</strong>
+          </span>
+          <span>
             Varje dag hittar jag inspiration i både mina kollegor och de
             fantastiska kunder som sätter sig i min stol. Det är mötet med
             människor och känslan av att få hjälpa någon känna sig fin som gör

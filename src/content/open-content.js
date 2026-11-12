@@ -26,8 +26,8 @@ export const introText = (
       ) mitt i Leksand, mellan Konditori Siljan och Sparbanken.
     </p>
     <p>
-      Vi är kontantfria och tar endast betalning via kontokort, Swish och Klarna
-      (vid köp över 1.650:-).
+      Vi är kontantfria och tar endast betalning via kontokort eller Swish. Vid
+      köp över 1.650:- kan du betala via Klarna.
     </p>
   </>
 );
